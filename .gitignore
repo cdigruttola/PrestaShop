@@ -149,6 +149,7 @@ app/config/config.php
 modules/*
 !modules/anblog
 !modules/an_copyright
+!modules/gm_omniprice
 override/*
 themes/*/
 themes/classic

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>gm_omniprice</name>
+    <displayName><![CDATA[OmniPrice - Omnibus Directive price compliancy]]></displayName>
+    <version><![CDATA[1.2.0]]></version>
+    <description><![CDATA[Displays lowest price before current promotion for discounted products]]></description>
+    <author><![CDATA[GreenMouseStudio.com]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>
