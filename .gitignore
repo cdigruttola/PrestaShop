@@ -147,6 +147,8 @@ app/config/config.php
 # Themes, modules and overrides
 
 modules/*
+!modules/anblog
+!modules/an_copyright
 override/*
 themes/*/
 themes/classic

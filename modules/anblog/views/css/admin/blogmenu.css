@@ -1,0 +1,45 @@
+ .icon-AdminAnblogManagement:before {
+         content: "\f040";
+         font-family: FontAwesome
+  }
+  
+#bloggeneralsetting .panel
+{
+    border-radius: 0px 0px 5px 5px !important;
+}
+.nav-tabs a:focus
+{
+    outline: none;
+}
+.anblog-globalconfig a:focus
+{
+    
+    border-top: 3px solid #25b9d7 !important;
+    border-bottom: none !important;
+}
+
+.anblog-globalconfig a:hover, .anblog-globalconfig li.active a
+{
+    border-top: 3px solid #25b9d7 !important;
+    border-bottom: none !important;
+}
+
+#bloggeneralsetting .panel
+{
+    display: none;
+}
+
+#bloggeneralsetting .panel.active
+{
+    display: block;
+}
+.panel-heading {
+    background-color: #fff !important;
+}
+.mce-container {
+    overflow:hidden;
+}
+
+#anblog_blog_form img {
+	max-width: 250px;
+}
