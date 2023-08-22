@@ -1,0 +1,57 @@
+[submodule "modules/optimizationseo"]
+	path = modules/optimizationseo
+	url = https://github.com/cdigruttola/optimizationseo
+[submodule "modules/cdigruttolafaq"]
+	path = modules/cdigruttolafaq
+	url = https://github.com/cdigruttola/cdigruttolafaq
+[submodule "modules/paypaltracking"]
+	path = modules/paypaltracking
+	url = https://github.com/cdigruttola/paypaltracking
+[submodule "modules/bocustomize"]
+	path = modules/bocustomize
+	url = https://github.com/cdigruttola/bocustomize
+[submodule "modules/packageweight"]
+	path = modules/packageweight
+	url = https://github.com/cdigruttola/packageweight
+[submodule "modules/prestascansecurity"]
+	path = modules/prestascansecurity
+	url = https://github.com/cdigruttola/prestascansecurity
+[submodule "modules/sendcloudapi"]
+	path = modules/sendcloudapi
+	url = https://github.com/cdigruttola/sendcloudapi
+[submodule "modules/electronicinvoicefields"]
+	path = modules/electronicinvoicefields
+	url = https://github.com/cdigruttola/electronicinvoicefields
+[submodule "modules/legalblink"]
+	path = modules/legalblink
+	url = https://github.com/cdigruttola/legalblink
+[submodule "gshoppingflux"]
+	path = gshoppingflux
+	url = https://github.com/cdigruttola/gshoppingflux
+[submodule "themes/falcon"]
+	path = themes/falcon
+	url = https://github.com/cdigruttola/falcon
+[submodule "modules/is_productslider"]
+	path = modules/is_productslider
+	url = https://github.com/cdigruttola/is_productslider
+[submodule "modules/is_imageslider"]
+	path = modules/is_imageslider
+	url = https://github.com/cdigruttola/is_imageslider
+[submodule "modules/is_searchbar"]
+	path = modules/is_searchbar
+	url = https://github.com/cdigruttola/is_searchbar
+[submodule "modules/is_shoppingcart"]
+	path = modules/is_shoppingcart
+	url = https://github.com/cdigruttola/is_shoppingcart
+[submodule "modules/is_themecore"]
+	path = modules/is_themecore
+	url = https://github.com/cdigruttola/is_themecore
+[submodule "modules/is_favoriteproducts"]
+	path = modules/is_favoriteproducts
+	url = https://github.com/cdigruttola/is_favoriteproducts
+[submodule "modules/is_productextratabs"]
+	path = modules/is_productextratabs
+	url = https://github.com/cdigruttola/is_productextratabs
+[submodule "modules/cartrulequantity"]
+	path = modules/cartrulequantity
+	url = https://github.com/cdigruttola/cartrulequantity

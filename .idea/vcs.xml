@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/gshoppingflux" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/bocustomize" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/cartrulequantity" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/cdigruttolafaq" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/electronicinvoicefields" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/is_favoriteproducts" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/is_imageslider" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/is_productextratabs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/is_productslider" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/is_searchbar" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/is_shoppingcart" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/is_themecore" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/legalblink" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/optimizationseo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/packageweight" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/paypaltracking" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/prestascansecurity" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/sendcloudapi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes/falcon" vcs="Git" />
+  </component>
+</project>
