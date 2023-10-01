@@ -98,7 +98,7 @@ class AdminImagesControllerCore extends AdminController
 
         $this->canGenerateAvif = $this->get('PrestaShop\PrestaShop\Core\Image\AvifExtensionChecker')->isAvailable();
         $this->isMultipleImageFormatFeatureEnabled = $this->get(FeatureFlagRepository::class)->isEnabled(FeatureFlagSettings::FEATURE_FLAG_MULTIPLE_IMAGE_FORMAT);
-        $this->imageFormatConfiguration = $this->get('PrestaShop\PrestaShop\Core\Image\ImageFormatConfiguration');
+        $this->imageFormatConfiguration = $this->get(ImageFormatConfiguration::class);
 
         $formFields = [];
 
@@ -484,6 +484,12 @@ class AdminImagesControllerCore extends AdminController
 
     public function beforeUpdateOptions()
     {
+        // We check this only if new image system is enabled
+        // With the old system, PS_IMAGE_FORMAT is not present in the form
+        if (!$this->isMultipleImageFormatFeatureEnabled) {
+            return;
+        }
+
         // Unset AVIF if not supported, add JPG if missing
         foreach ($_POST['PS_IMAGE_FORMAT'] as $k => $v) {
             if ($v == 'avif' && !$this->canGenerateAvif) {
@@ -680,15 +686,10 @@ class AdminImagesControllerCore extends AdminController
 
         /*
          * Let's resolve which formats we will use for image generation.
-         * In new image system, it's multiple formats. In case of legacy, it's only .jpg.
          *
          * In case of .jpg images, the actual format inside is decided by ImageManager.
          */
-        if ($this->isMultipleImageFormatFeatureEnabled) {
-            $configuredImageFormats = $this->imageFormatConfiguration->getGenerationFormats();
-        } else {
-            $configuredImageFormats = ['jpg'];
-        }
+        $configuredImageFormats = $this->imageFormatConfiguration->getGenerationFormats();
 
         if (!$productsImages) {
             $formated_medium = ImageType::getFormattedName('medium');
@@ -836,15 +837,10 @@ class AdminImagesControllerCore extends AdminController
 
         /*
          * Let's resolve which formats we will use for image generation.
-         * In new image system, it's multiple formats. In case of legacy, it's only .jpg.
          *
          * In case of .jpg images, the actual format inside is decided by ImageManager.
          */
-        if ($this->isMultipleImageFormatFeatureEnabled) {
-            $configuredImageFormats = $this->imageFormatConfiguration->getGenerationFormats();
-        } else {
-            $configuredImageFormats = ['jpg'];
-        }
+        $configuredImageFormats = $this->imageFormatConfiguration->getGenerationFormats();
 
         foreach ($type as $image_type) {
             foreach ($languages as $language) {

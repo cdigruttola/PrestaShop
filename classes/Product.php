@@ -3884,13 +3884,13 @@ class ProductCore extends ObjectModel
         } else {
             $price = (float) $specific_price['price'];
         }
-        // convert only if the specific price is in the default currency (id_currency = 0)
+        // convert only if the specific price currency is different from the default currency
         if (
             !$specific_price ||
             !(
                 $specific_price['price'] >= 0 &&
                 $specific_price['id_currency'] &&
-                $id_currency !== $specific_price['id_currency']
+                $id_currency === $specific_price['id_currency']
             )
         ) {
             $price = Tools::convertPrice($price, $id_currency);
@@ -6114,7 +6114,7 @@ class ProductCore extends ObjectModel
 
         foreach ($result as $row) {
             if ((int) $row['id_module'] && (int) $row['type'] == Product::CUSTOMIZE_TEXTFIELD) {
-                // Hook displayCustomization: Call only the module in question
+                // Hook called only for the module concerned
                 // When a module saves a customization programmatically, it should add its ID in the `id_module` column
                 $row['value'] = Hook::exec('displayCustomization', ['customization' => $row], (int) $row['id_module']);
             }

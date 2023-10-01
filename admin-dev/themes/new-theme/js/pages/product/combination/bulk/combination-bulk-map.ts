@@ -1,4 +1,3 @@
-<?php
 /**
  * Copyright since 2007 PrestaShop SA and Contributors
  * PrestaShop is an International Registered Trademark & Property of PrestaShop SA
@@ -24,37 +23,12 @@
  * @license   https://opensource.org/licenses/OSL-3.0 Open Software License (OSL 3.0)
  */
 
-namespace PrestaShop\PrestaShop\Core\Cache\Clearer;
-
-/**
- * Class CacheClearerChain clears entire PrestaShop cache.
- */
-final class CacheClearerChain implements CacheClearerInterface
-{
-    /**
-     * @var CacheClearerInterface[]
-     */
-    private $cacheClearers;
-
-    /**
-     * @param CacheClearerInterface ...$cacheClearers
-     */
-    public function __construct(CacheClearerInterface ...$cacheClearers)
-    {
-        $this->cacheClearers = $cacheClearers;
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function clear()
-    {
-        foreach ($this->cacheClearers as $cacheClearer) {
-            $cacheClearer->clear();
-        }
-
-        if (function_exists('opcache_reset')) {
-            opcache_reset();
-        }
-    }
-}
+export default {
+  priceTaxExcludedInput: '#bulk_combination_price_price_tax_excluded',
+  priceTaxExcludedSwitch: 'input[name="bulk_combination[price][disabling_switch_price_tax_excluded]"]',
+  priceTaxIncludedInput: '#bulk_combination_price_price_tax_included',
+  priceTaxIncludedSwitch: 'input[name="bulk_combination[price][disabling_switch_price_tax_included]"]',
+  taxRateContainer: '#bulk_combination_price',
+  lowStockAlertSwitch: 'input[name="bulk_combination[stock][low_stock_threshold][low_stock_alert]"]',
+  lowStockThresholdValueInput: '#bulk_combination_stock_low_stock_threshold_threshold_value',
+};
