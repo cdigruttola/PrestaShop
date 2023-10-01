@@ -21,6 +21,9 @@
       <sourceFolder url="file://$MODULE_DIR$/tests/Resources/modules/translationtest/src" isTestSource="false" packagePrefix="PrestaShop\Module\TranslationTest\" />
       <sourceFolder url="file://$MODULE_DIR$/tests/Resources/modules/xlftranslatedmodule/src" isTestSource="false" packagePrefix="PrestaShop\Module\Xlftranslatedmodule\" />
       <sourceFolder url="file://$MODULE_DIR$/tests/Unit" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/modules/ps_emailalerts/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/modules/ps_emailalerts/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/tools/build/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/tests/Resources/modules/cronjobs/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/tests/Resources/modules/demo/vendor/composer" />
@@ -181,6 +184,10 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/webmozart/assert" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/willdurand/jsonp-callback-validator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/willdurand/negotiation" />
+      <excludeFolder url="file://$MODULE_DIR$/modules/productcomments/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/modules/ps_emailalerts/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/modules/ps_linklist/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/var" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

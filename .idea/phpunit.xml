@@ -3,9 +3,10 @@
   <component name="PHPUnit">
     <option name="directories">
       <list>
-        <option value="$PROJECT_DIR$/modules/ps_facetedsearch/tests/php" />
-        <option value="$PROJECT_DIR$/tools/build/tests" />
+        <option value="$PROJECT_DIR$/modules/ps_emailalerts/tests" />
         <option value="$PROJECT_DIR$/modules/ps_distributionapiclient/tests/Unit" />
+        <option value="$PROJECT_DIR$/tools/build/tests" />
+        <option value="$PROJECT_DIR$/modules/ps_facetedsearch/tests/php" />
         <option value="$PROJECT_DIR$/tests/Unit" />
       </list>
     </option>

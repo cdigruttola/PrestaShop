@@ -178,6 +178,9 @@
       <path value="$PROJECT_DIR$/tests/Resources/modules/translationtest/vendor/composer" />
       <path value="$PROJECT_DIR$/tests/Resources/modules/ps_banner/vendor/composer" />
       <path value="$PROJECT_DIR$/tests/Resources/modules/cronjobs/vendor/composer" />
+      <path value="$PROJECT_DIR$/modules/ps_emailalerts/vendor/composer" />
+      <path value="$PROJECT_DIR$/modules/ps_linklist/vendor/composer" />
+      <path value="$PROJECT_DIR$/modules/productcomments/vendor/composer" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2">
@@ -194,6 +197,7 @@
   </component>
   <component name="PhpUnit">
     <phpunit_settings>
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/modules/ps_emailalerts/vendor/autoload.php" />
       <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/tests/Unit/phpunit.xml" custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" use_configuration_file="true" />
     </phpunit_settings>
   </component>
