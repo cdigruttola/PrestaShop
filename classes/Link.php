@@ -514,8 +514,8 @@ class LinkCore
         $params = [];
         $params['id'] = $cmsCategory->id;
         $params['rewrite'] = (!$alias) ? $cmsCategory->link_rewrite : $alias;
-        $params['meta_keywords'] = Tools::str2url($cmsCategory->meta_keywords);
-        $params['meta_title'] = Tools::str2url($cmsCategory->meta_title);
+        $params['meta_keywords'] = Tools::str2url($cmsCategory->getFieldByLang('meta_keywords'));
+        $params['meta_title'] = Tools::str2url($cmsCategory->getFieldByLang('meta_title'));
 
         return $url . $dispatcher->createUrl('cms_category_rule', $idLang, $params, $this->allow, '', $idShop);
     }
@@ -618,8 +618,8 @@ class LinkCore
         $params = [];
         $params['id'] = $supplier->id;
         $params['rewrite'] = (!$alias) ? $supplier->link_rewrite : $alias;
-        $params['meta_keywords'] = Tools::str2url($supplier->meta_keywords);
-        $params['meta_title'] = Tools::str2url($supplier->meta_title);
+        $params['meta_keywords'] = Tools::str2url($supplier->getFieldByLang('meta_keywords'));
+        $params['meta_title'] = Tools::str2url($supplier->getFieldByLang('meta_title'));
 
         return $url . $dispatcher->createUrl('supplier_rule', $idLang, $params, $this->allow, '', $idShop);
     }
