@@ -67,3 +67,6 @@
 [submodule "modules/binshopsrest"]
 	path = modules/binshopsrest
 	url = https://github.com/cdigruttola/prestashop-rest.git
+[submodule "modules/eicaptcha"]
+	path = modules/eicaptcha
+	url = https://github.com/nenes25/eicaptcha.git
