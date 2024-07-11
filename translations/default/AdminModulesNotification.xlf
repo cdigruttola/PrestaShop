@@ -38,7 +38,7 @@
       <trans-unit id="f996dce5bdfb1b1094e41cf996c5fdae">
         <source>Please specify module URL</source>
         <target>Please specify module URL</target>
-        <note>Line: 119</note>
+        <note>Line: 120</note>
       </trans-unit>
     </body>
   </file>
@@ -73,16 +73,6 @@
         <source>Successfully signed in to PrestaShop Addons.</source>
         <target>Successfully signed in to PrestaShop Addons.</target>
         <note>Line: 525</note>
-      </trans-unit>
-      <trans-unit id="980b6caee06822f8c5df45eb7db277be">
-        <source>The module transplanted successfully to the hook.</source>
-        <target>The module transplanted successfully to the hook.</target>
-        <note>Line: 509</note>
-      </trans-unit>
-      <trans-unit id="80e868e8d753c3ec4066aab283e66cbc">
-        <source>The module was successfully removed from the hook.</source>
-        <target>The module was successfully removed from the hook.</target>
-        <note>Line: 510</note>
       </trans-unit>
     </body>
   </file>
@@ -394,21 +384,6 @@
         <target>Please select a module to unhook.</target>
         <note>Line: 213</note>
       </trans-unit>
-      <trans-unit id="1c1824ce21df05df8689641c516c9d75">
-        <source>This module cannot be loaded.</source>
-        <target>This module cannot be loaded.</target>
-        <note>Line: 222</note>
-      </trans-unit>
-      <trans-unit id="0c01b89a049f95e9eb10cfeb2a2901f0">
-        <source>Hook cannot be loaded.</source>
-        <target>Hook cannot be loaded.</target>
-        <note>Line: 224</note>
-      </trans-unit>
-      <trans-unit id="c40924509e257aa0e73ccc576bd6b953">
-        <source>An error occurred while deleting the module from its hook.</source>
-        <target>An error occurred while deleting the module from its hook.</target>
-        <note>Line: 227</note>
-      </trans-unit>
     </body>
   </file>
   <file original="src/Adapter/Module/ModuleDataProvider.php" source-language="en-US" target-language="en" datatype="plaintext">
@@ -523,16 +498,6 @@
   </file>
   <file original="src/PrestaShopBundle/Command/ModuleCommand.php" source-language="en-US" target-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="1ff626f78b7506f340c7b2ce3398367a">
-        <source>Cannot %action% module %module%. %error_details%</source>
-        <target>Cannot %action% module %module%. %error_details%</target>
-        <note>Line: 207</note>
-      </trans-unit>
-      <trans-unit id="9dca2e42fe7a0db763b8737e9a8f9133">
-        <source>%action% action on module %module% succeeded.</source>
-        <target>%action% action on module %module% succeeded.</target>
-        <note>Line: 193</note>
-      </trans-unit>
       <trans-unit id="6867740141667a3da88ac51e48ed1d9d">
         <source>Unknown module action. It must be one of these values: %actions%</source>
         <target>Unknown module action. It must be one of these values: %actions%</target>
@@ -547,6 +512,45 @@
         <source>Configuration successfully applied.</source>
         <target>Configuration successfully applied.</target>
         <note>Line: 183</note>
+      </trans-unit>
+      <trans-unit id="1ff626f78b7506f340c7b2ce3398367a">
+        <source>Cannot %action% module %module%. %error_details%</source>
+        <target>Cannot %action% module %module%. %error_details%</target>
+        <note>Line: 207</note>
+      </trans-unit>
+      <trans-unit id="9dca2e42fe7a0db763b8737e9a8f9133">
+        <source>%action% action on module %module% succeeded.</source>
+        <target>%action% action on module %module% succeeded.</target>
+        <note>Line: 193</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/PrestaShopBundle/Controller/Admin/Improve/Design/PositionsController.php" source-language="en-US" target-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="1c1824ce21df05df8689641c516c9d75">
+        <source>This module cannot be loaded.</source>
+        <target>This module cannot be loaded.</target>
+        <note>Line: 182</note>
+      </trans-unit>
+      <trans-unit id="0c01b89a049f95e9eb10cfeb2a2901f0">
+        <source>Hook cannot be loaded.</source>
+        <target>Hook cannot be loaded.</target>
+        <note>Line: 191</note>
+      </trans-unit>
+      <trans-unit id="c40924509e257aa0e73ccc576bd6b953">
+        <source>An error occurred while deleting the module from its hook.</source>
+        <target>An error occurred while deleting the module from its hook.</target>
+        <note>Line: 200</note>
+      </trans-unit>
+      <trans-unit id="980b6caee06822f8c5df45eb7db277be">
+        <source>The module transplanted successfully to the hook.</source>
+        <target>The module transplanted successfully to the hook.</target>
+        <note>Line: 236</note>
+      </trans-unit>
+      <trans-unit id="80e868e8d753c3ec4066aab283e66cbc">
+        <source>The module was successfully removed from the hook.</source>
+        <target>The module was successfully removed from the hook.</target>
+        <note>Line: 237</note>
       </trans-unit>
     </body>
   </file>

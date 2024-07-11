@@ -339,21 +339,17 @@
       <trans-unit id="e5dc8e5afea0a065948622039358de37">
         <source>New window</source>
         <target>New window</target>
-        <note>Line: 1413</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/PrestaShopBundle/Resources/views/Admin/Multistore/dropdown.html.twig" source-language="en-US" target-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="2f6bb081ffe242f2f09f5a7fb0ca75aa">
-        <source>Search store name</source>
-        <target>Search store name</target>
-        <note>Line: 33</note>
+        <note>Line: 1409</note>
       </trans-unit>
     </body>
   </file>
   <file original="src/PrestaShopBundle/Resources/views/Admin/Multistore/header.html.twig" source-language="en-US" target-language="en" datatype="plaintext">
     <body>
+      <trans-unit id="2f6bb081ffe242f2f09f5a7fb0ca75aa">
+        <source>Search store name</source>
+        <target>Search store name</target>
+        <note>Line: 67</note>
+      </trans-unit>
       <trans-unit id="a5facb9cd738950e5cb8ba22d8c882d7">
         <source>Customize your multistore header, [1]pick a color[/1] for this store context.</source>
         <target>Customize your multistore header, [1]pick a color[/1] for this store context.</target>

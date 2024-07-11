@@ -452,7 +452,7 @@ class ProductControllerCore extends ProductPresentingFrontControllerCore
                 'id_customization' => empty($customization_datas) ? null : $customization_datas[0]['id_customization'],
                 'accessories' => $accessories,
                 'product' => $product_for_template,
-                'displayUnitPrice' => !empty($this->product->unity) && $this->product->unit_price > 0.000000,
+                'displayUnitPrice' => !empty($product_for_template['unit_price_tax_excluded']),
                 'product_manufacturer' => $productManufacturer,
                 'manufacturer_image_url' => $manufacturerImageUrl,
                 'product_brand_url' => $productBrandUrl,
@@ -509,6 +509,11 @@ class ProductControllerCore extends ProductPresentingFrontControllerCore
     {
         $product = $this->getTemplateVarProduct();
         $minimalProductQuantity = $this->getProductMinimalQuantity($product);
+
+        // If the product is already in the cart, we can set the minimal quantity to 1
+        if ($product['cart_quantity'] >= $minimalProductQuantity) {
+            $minimalProductQuantity = 1;
+        }
 
         ob_end_clean();
         header('Content-Type: application/json');
@@ -696,7 +701,7 @@ class ProductControllerCore extends ProductPresentingFrontControllerCore
                 $this->combinations[$row['id_product_attribute']]['isbn'] = $row['isbn'];
                 $this->combinations[$row['id_product_attribute']]['unit_impact'] = $row['unit_price_impact'];
                 $this->combinations[$row['id_product_attribute']]['minimal_quantity'] = $row['minimal_quantity'];
-                if ($row['available_date'] != '0000-00-00' && Validate::isDate($row['available_date'])) {
+                if (!empty($row['available_date']) && $row['available_date'] != '0000-00-00' && Validate::isDate($row['available_date'])) {
                     $this->combinations[$row['id_product_attribute']]['available_date'] = $row['available_date'];
                     $this->combinations[$row['id_product_attribute']]['date_formatted'] = Tools::displayDate($row['available_date']);
                 } else {
@@ -1199,6 +1204,7 @@ class ProductControllerCore extends ProductPresentingFrontControllerCore
         $product['new'] = (int) $this->product->new;
         $product['id_product_attribute'] = $this->getIdProductAttributeByGroupOrRequestOrDefault();
         $product['minimal_quantity'] = $this->getProductMinimalQuantity($product);
+        $product['cart_quantity'] = $this->context->cart->getProductQuantity($product['id_product'], $product['id_product_attribute'])['quantity'];
         $product['quantity_wanted'] = $this->getRequiredQuantity($product);
         $product['extraContent'] = $extraContentFinder->addParams(['product' => $this->product])->present();
         $product['ecotax_tax_inc'] = $this->product->getEcotax(null, true, true);
@@ -1217,9 +1223,6 @@ class ProductControllerCore extends ProductPresentingFrontControllerCore
         );
         $product_full['quantity_label'] = ($this->product->quantity > 1) ? $this->trans('Items', [], 'Shop.Theme.Catalog') : $this->trans('Item', [], 'Shop.Theme.Catalog');
         $product_full['quantity_discounts'] = $this->quantity_discounts;
-
-        // Adapt unit price to display settings
-        $product_full['unit_price'] = $productSettings->include_taxes ? $product_full['unit_price_tax_included'] : $product_full['unit_price_tax_excluded'];
 
         $group_reduction = GroupReduction::getValueForProduct($this->product->id, (int) Group::getCurrent()->id);
         if ($group_reduction === false) {
@@ -1321,6 +1324,10 @@ class ProductControllerCore extends ProductPresentingFrontControllerCore
         $requiredQuantity = (int) Tools::getValue('quantity_wanted', $this->getProductMinimalQuantity($product));
         if ($requiredQuantity < $product['minimal_quantity']) {
             $requiredQuantity = $product['minimal_quantity'];
+        }
+
+        if ($product['cart_quantity'] >= $requiredQuantity) {
+            return 0;
         }
 
         return $requiredQuantity;

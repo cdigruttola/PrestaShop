@@ -430,10 +430,12 @@ class CartControllerCore extends FrontController
 
         // Check product quantity availability
         if ('update' !== $mode && $this->shouldAvailabilityErrorBeRaised($product, $qty_to_check)) {
-            $availableProductQuantity = StockAvailable::getQuantityAvailableByProduct(
-                $this->id_product,
-                $this->id_product_attribute
-            );
+            /*
+             * If the product can't be in the cart in this quantity, we raise an error.
+             * For the purpose of this error message, we must get the real quantity in stock.
+             * No subtracting of quantity in the cart here.
+             */
+            $availableProductQuantity = Product::getQuantity($this->id_product, $this->id_product_attribute);
             $this->errors[] = $this->trans(
                 'You can only buy %quantity% "%product%". Please adjust the quantity in your cart to continue.',
                 [
@@ -521,10 +523,12 @@ class CartControllerCore extends FrontController
                     'Shop.Notifications.Error'
                 );
             } elseif ($this->shouldAvailabilityErrorBeRaised($product, $qty_to_check)) {
-                $availableProductQuantity = StockAvailable::getQuantityAvailableByProduct(
-                    $this->id_product,
-                    $this->id_product_attribute
-                );
+                /*
+                 * If the product can't be in the cart in this quantity, we raise an error.
+                 * For the purpose of this error message, we must get the real quantity in stock.
+                 * No subtracting of quantity in the cart here.
+                 */
+                $availableProductQuantity = Product::getQuantity($this->id_product, $this->id_product_attribute);
                 $this->{$ErrorKey}[] = $this->trans(
                     'You can only buy %quantity% "%product%". Please adjust the quantity in your cart to continue.',
                     [
@@ -536,11 +540,12 @@ class CartControllerCore extends FrontController
             }
         }
 
+        // Check validity of all cart rules in cart and check if there are some automatic ones that should be applied
         CartRule::autoRemoveFromCart();
         CartRule::autoAddToCart();
 
         // Finally check that all other products are also available, but only if there was no previous error
-        if (empty($this->{$ErrorKey})) {
+        if ('add' !== $mode && empty($this->{$ErrorKey})) {
             $areProductsAvailable = $this->areProductsAvailable();
             if (true !== $areProductsAvailable) {
                 $this->{$ErrorKey}[] = $areProductsAvailable;
@@ -599,11 +604,10 @@ class CartControllerCore extends FrontController
             return false;
         }
 
-        // Check if this product is out-of-stock
-        $availableProductQuantity = StockAvailable::getQuantityAvailableByProduct(
-            $this->id_product,
-            $this->id_product_attribute
-        );
+        /*
+         * We check if this product is out-of-stock.
+         */
+        $availableProductQuantity = Product::getQuantity($this->id_product, $this->id_product_attribute);
         if ($availableProductQuantity < $qtyToCheck) {
             return true;
         }
@@ -615,7 +619,7 @@ class CartControllerCore extends FrontController
             $this->id_product_attribute,
             null,
             $this->context->cart,
-            $this->customization_id
+            false
         );
 
         return $productQuantityAvailableAfterCartItemsHaveBeenRemovedFromStock < 0;
@@ -623,6 +627,8 @@ class CartControllerCore extends FrontController
 
     /**
      * Check if the products in the cart are available.
+     * This is a general check that is handy when you want to check whole cart,
+     * for example when loading the cart or order page.
      *
      * @return bool|string
      */

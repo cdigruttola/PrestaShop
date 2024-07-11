@@ -55,7 +55,7 @@ class OrderReturnCore extends ObjectModel
         'fields' => [
             'id_customer' => ['type' => self::TYPE_INT, 'validate' => 'isUnsignedId', 'required' => true],
             'id_order' => ['type' => self::TYPE_INT, 'validate' => 'isUnsignedId', 'required' => true],
-            'question' => ['type' => self::TYPE_HTML, 'validate' => 'isCleanHtml'],
+            'question' => ['type' => self::TYPE_HTML, 'validate' => 'isCleanHtml', 'size' => 4194303],
             'state' => ['type' => self::TYPE_STRING],
             'date_add' => ['type' => self::TYPE_DATE, 'validate' => 'isDate'],
             'date_upd' => ['type' => self::TYPE_DATE, 'validate' => 'isDate'],
@@ -90,7 +90,7 @@ class OrderReturnCore extends ObjectModel
     {
         $order = new Order((int) $this->id_order);
         if (!Validate::isLoadedObject($order)) {
-            die(Tools::displayError());
+            die(Tools::displayError(sprintf('Order with ID "%s" could not be loaded.', $this->id_order)));
         }
         $products = $order->getProducts();
         /* Products already returned */
@@ -211,7 +211,7 @@ class OrderReturnCore extends ObjectModel
         $returns = Customization::getReturnedCustomizations($id_order);
         $order = new Order((int) $id_order);
         if (!Validate::isLoadedObject($order)) {
-            die(Tools::displayError());
+            die(Tools::displayError(sprintf('Order with ID "%s" could not be loaded.', $id_order)));
         }
         $products = $order->getProducts();
 

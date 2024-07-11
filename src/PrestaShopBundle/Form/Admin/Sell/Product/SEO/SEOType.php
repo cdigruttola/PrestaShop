@@ -110,11 +110,11 @@ class SEOType extends TranslatorAwareType
             ->add('serp', SerpType::class)
             ->add('meta_title', TranslatableType::class, [
                 'label' => $this->trans('Meta title', 'Admin.Catalog.Feature'),
-                'label_help_box' => $this->trans('Public title for the product page, and for search engines. Leave blank to use the product name. The number of remaining characters is displayed to the right of the field.', 'Admin.Catalog.Help'),
+                'label_help_box' => $this->trans('Public title that may appear in the browser and search engines. The recommended length is about 60 characters (including spaces). If you leave it blank, the product name will be used.', 'Admin.Catalog.Help'),
                 'required' => false,
                 'type' => TextWithLengthCounterType::class,
                 'help' => $this->trans(
-                    'Public title for the product page, and for search engines. Leave blank to use the product name. The number of remaining characters is displayed to the right of the field.',
+                    'Public title that may appear in the browser and search engines. The recommended length is about 60 characters (including spaces). If you leave it blank, the product name will be used.',
                     'Admin.Catalog.Help'
                 ),
                 'options' => [
@@ -139,11 +139,11 @@ class SEOType extends TranslatorAwareType
             ])
             ->add('meta_description', TranslatableType::class, [
                 'label' => $this->trans('Meta description', 'Admin.Catalog.Feature'),
-                'label_help_box' => $this->trans('This description will appear in search engines. You need a single sentence, shorter than 160 characters (including spaces)', 'Admin.Catalog.Help'),
+                'label_help_box' => $this->trans('Summary for robots, that could appear in search engines. The recommended length is about 160 characters (including spaces). If you leave it blank, an excerpt from the short description will be used.', 'Admin.Catalog.Help'),
                 'required' => false,
                 'type' => TextWithLengthCounterType::class,
                 'help' => $this->trans(
-                    'This description will appear in search engines. It should be a single sentence, shorter than 160 characters (including spaces).',
+                    'Summary for robots, that could appear in search engines. The recommended length is about 160 characters (including spaces). If you leave it blank, an excerpt from the short description will be used.',
                     'Admin.Catalog.Help'
                 ),
                 'options' => [
@@ -227,16 +227,7 @@ class SEOType extends TranslatorAwareType
         $friendlyUrl = $this->router->generate('admin_metas_index') . '#meta_settings_set_up_urls_form';
         $productPreferencesUrl = $this->router->generate('admin_product_preferences') . '#configuration_fieldset_products';
 
-        if ($this->friendlyUrlEnabled) {
-            $alertMessages[] = sprintf(
-                '<strong>%s</strong> %s',
-                $this->trans('Friendly URLs are currently enabled.', 'Admin.Catalog.Notification'),
-                $this->trans('To disable it, go to [1]SEO and URLs[/1]', 'Admin.Catalog.Notification', [
-                    '[1]' => '<a target="_blank" href="' . $friendlyUrl . '">',
-                    '[/1]' => '</a>',
-                ])
-            );
-        } else {
+        if (!$this->friendlyUrlEnabled) {
             $alertMessages[] = sprintf(
                 '<strong>%s</strong> %s',
                 $this->trans('Friendly URLs are currently disabled.', 'Admin.Catalog.Notification'),

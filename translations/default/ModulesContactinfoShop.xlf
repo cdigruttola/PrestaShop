@@ -26,11 +26,6 @@
         <target>Email us: [1]%email%[/1]</target>
         <note>Line: 57</note>
       </trans-unit>
-      <trans-unit id="a0bfe0853cf82bdf5dcb9b0bac76c357">
-        <source>Email us:</source>
-        <target>Email us:</target>
-        <note>Line: 57</note>
-      </trans-unit>
       <trans-unit id="1300caaefd15b839f37952dc7cc75d82">
         <source>Call us:</source>
         <target>Call us:</target>
@@ -45,6 +40,11 @@
         <source>Details:</source>
         <target>Details:</target>
         <note>Line: 67</note>
+      </trans-unit>
+      <trans-unit id="a0bfe0853cf82bdf5dcb9b0bac76c357">
+        <source>Email us:</source>
+        <target>Email us:</target>
+        <note>Line: 57</note>
       </trans-unit>
     </body>
   </file>

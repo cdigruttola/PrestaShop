@@ -132,9 +132,9 @@ class CartCore extends ObjectModel
             'id_lang' => ['type' => self::TYPE_INT, 'validate' => 'isUnsignedId', 'required' => true],
             'recyclable' => ['type' => self::TYPE_BOOL, 'validate' => 'isBool'],
             'gift' => ['type' => self::TYPE_BOOL, 'validate' => 'isBool'],
-            'gift_message' => ['type' => self::TYPE_STRING, 'validate' => 'isMessage'],
+            'gift_message' => ['type' => self::TYPE_STRING, 'validate' => 'isCleanHtml', 'size' => 4194303],
             'mobile_theme' => ['type' => self::TYPE_BOOL, 'validate' => 'isBool'],
-            'delivery_option' => ['type' => self::TYPE_STRING],
+            'delivery_option' => ['type' => self::TYPE_STRING, 'size' => 4194303],
             'secure_key' => ['type' => self::TYPE_STRING, 'size' => 32],
             'allow_seperated_package' => ['type' => self::TYPE_BOOL, 'validate' => 'isBool'],
             'date_add' => ['type' => self::TYPE_DATE, 'validate' => 'isDate'],
@@ -314,11 +314,11 @@ class CartCore extends ObjectModel
     public function updateAddressId($id_address, $id_address_new)
     {
         $to_update = false;
-        if (!isset($this->id_address_invoice) || $this->id_address_invoice == $id_address) {
+        if (empty($this->id_address_invoice) || $this->id_address_invoice == $id_address) {
             $to_update = true;
             $this->id_address_invoice = $id_address_new;
         }
-        if (!isset($this->id_address_delivery) || $this->id_address_delivery == $id_address) {
+        if (empty($this->id_address_delivery) || $this->id_address_delivery == $id_address) {
             $to_update = true;
             $this->id_address_delivery = $id_address_new;
         }
@@ -347,7 +347,7 @@ class CartCore extends ObjectModel
      */
     public function updateDeliveryAddressId(int $currentAddressId, int $newAddressId)
     {
-        if (!isset($this->id_address_delivery) || (int) $this->id_address_delivery === $currentAddressId) {
+        if (empty($this->id_address_delivery) || (int) $this->id_address_delivery === $currentAddressId) {
             $this->id_address_delivery = $newAddressId;
             $this->update();
         }
@@ -755,6 +755,19 @@ class CartCore extends ObjectModel
                     $reduction_type_row = ['reduction_type' => 0];
                 }
 
+                /*
+                 * In case of packs, we need to properly calculate the quantity in stock. We can't just use
+                 * the quantity from the query, because stocks can be set to use the quantity of the products
+                 * in them. The quantity in stock_available then has no meaning and could be always zero.
+                 *
+                 * When calling Pack::getQuantity here, you MUST use null for $cart parameter. Otherwise it
+                 * will subtract the quantity that is already in the cart. Basically resulting in a nonsense,
+                 * half of quantity you have. We need the REAL quantity.
+                 */
+                if (Pack::isPack($product['id_product'])) {
+                    $product['quantity_available'] = Pack::getQuantity((int) $product['id_product'], (int) $product['id_product_attribute']);
+                }
+
                 $products[$key] = array_merge($product, $reduction_type_row);
             }
         }
@@ -813,8 +826,9 @@ class CartCore extends ObjectModel
                 $product['reduction_without_tax'] = $props['reduction_without_tax'];
                 $product['price_without_reduction'] = $props['price_without_reduction'];
                 $product['specific_prices'] = $props['specific_prices'];
+                $product['unit_price'] = $props['unit_price_tax_excluded'];
                 $product['unit_price_ratio'] = $props['unit_price_ratio'];
-                $product['unit_price'] = $product['unit_price_tax_excluded'] = $props['unit_price_tax_excluded'];
+                $product['unit_price_tax_excluded'] = $props['unit_price_tax_excluded'];
                 $product['unit_price_tax_included'] = $props['unit_price_tax_included'];
                 unset($props);
 
@@ -1351,7 +1365,7 @@ class CartCore extends ObjectModel
      *
      * @param int $idProduct Product ID
      * @param int $idProductAttribute ProductAttribute ID
-     * @param int $idCustomization Customization ID
+     * @param int|bool $idCustomization Customization ID
      * @param int $idAddressDelivery Delivery Address ID
      *
      * @return array quantity index     : number of product in cart without counting those of pack in cart
@@ -1359,16 +1373,16 @@ class CartCore extends ObjectModel
      */
     public function getProductQuantity($idProduct, $idProductAttribute = 0, $idCustomization = 0, $idAddressDelivery = 0)
     {
-        $productIsPack = Pack::isPack($idProduct);
         $defaultPackStockType = Configuration::get('PS_PACK_STOCK_TYPE');
         $packStockTypesAllowed = [
             Pack::STOCK_TYPE_PRODUCTS_ONLY,
             Pack::STOCK_TYPE_PACK_BOTH,
         ];
         $packStockTypesDefaultSupported = (int) in_array($defaultPackStockType, $packStockTypesAllowed);
-        $firstUnionSql = 'SELECT cp.`quantity` as first_level_quantity, 0 as pack_quantity
+        // We need to SUM up cp.`quantity` because multiple rows could be returned when id_customization filtering is skipped.
+        $firstUnionSql = 'SELECT SUM(cp.`quantity`) as first_level_quantity, 0 as pack_quantity
           FROM `' . _DB_PREFIX_ . 'cart_product` cp';
-        $secondUnionSql = 'SELECT 0 as first_level_quantity, cp.`quantity` * p.`quantity` as pack_quantity
+        $secondUnionSql = 'SELECT 0 as first_level_quantity, SUM(cp.`quantity` * p.`quantity`) as pack_quantity
           FROM `' . _DB_PREFIX_ . 'cart_product` cp' .
             ' JOIN `' . _DB_PREFIX_ . 'pack` p ON cp.`id_product` = p.`id_product_pack`' .
             ' JOIN `' . _DB_PREFIX_ . 'product` pr ON p.`id_product_pack` = pr.`id_product`';
@@ -1382,9 +1396,11 @@ class CartCore extends ObjectModel
             $firstUnionSql .= $customizationJoin;
             $secondUnionSql .= $customizationJoin;
         }
+        // Ignore customizations if $idCustomization is set to false
+        // This is necessary to get products with or without customizations
         $commonWhere = '
             WHERE cp.`id_product_attribute` = ' . (int) $idProductAttribute . '
-            AND cp.`id_customization` = ' . (int) $idCustomization . '
+            ' . ($idCustomization !== false ? ' AND cp.`id_customization` = ' . (int) $idCustomization : '') . '
             AND cp.`id_cart` = ' . (int) $this->id;
 
         if (Configuration::get('PS_ALLOW_MULTISHIPPING') && $this->isMultiAddressDelivery()) {
@@ -1511,7 +1527,7 @@ class CartCore extends ObjectModel
         }
 
         if (!Validate::isLoadedObject($product)) {
-            die(Tools::displayError());
+            die(Tools::displayError(sprintf('Product with ID "%s" could not be loaded.', $id_product)));
         }
 
         if (isset(self::$_nbProducts[$this->id])) {
@@ -1559,7 +1575,7 @@ class CartCore extends ObjectModel
 
         /* Update quantity if product already exist */
         if (!empty($cartProductQuantity['quantity'])) {
-            $productQuantity = Product::getQuantity($id_product, $id_product_attribute, null, $this);
+            $productQuantity = Product::getQuantity($id_product, $id_product_attribute, null, $this, false);
             $availableOutOfStock = Product::isAvailableWhenOutOfStock(StockAvailable::outOfStock($product->id));
 
             if ($operator == 'up') {
@@ -1607,7 +1623,7 @@ class CartCore extends ObjectModel
 
             // Quantity for product pack
             if (Pack::isPack($id_product)) {
-                $result2['quantity'] = Pack::getQuantity($id_product, $id_product_attribute, null, $this);
+                $result2['quantity'] = Pack::getQuantity($id_product, $id_product_attribute, null, $this, false);
             }
 
             if (isset($result2['out_of_stock']) && !Product::isAvailableWhenOutOfStock((int) $result2['out_of_stock']) && !$skipAvailabilityCheckOutOfStock) {
@@ -2029,7 +2045,7 @@ class CartCore extends ObjectModel
     {
         $cart = new Cart($id_cart);
         if (!Validate::isLoadedObject($cart)) {
-            die(Tools::displayError());
+            die(Tools::displayError(sprintf('Cart with ID "%s" could not be loaded.', $id_cart)));
         }
 
         $with_taxes = $use_tax_display ? $cart->_taxCalculationMethod != PS_TAX_EXC : true;
@@ -2511,6 +2527,15 @@ class CartCore extends ObjectModel
 
     /**
      * Get products grouped by package and by addresses to be sent individualy (one package = one shipping cost).
+     * This method tries to separate products to as small number of packages as possible. Ideally one.
+     *
+     * If there is a carrier that sends all products, it will use it.
+     * If not, it will separate it to multiple packages.
+     *
+     * What can also happen is that it will return one package, but with no carrier available.
+     * It can also return more packages, but some of the packages may not have any carrier to send it.
+     * ("carrier_list" => [0 => 0])
+     * The core needs to handle these cases later in the process.
      *
      * @return array array(
      *               0 => array( // First address
@@ -2837,6 +2862,14 @@ class CartCore extends ObjectModel
         $delivery_option_list = [];
         $carriers_price = [];
         $carrier_collection = [];
+
+        /*
+         * We get a list of packages. This list is always composed of
+         * $id_address and corresponding packages of products.
+         *
+         * The $id_address will always be only one. There used to be a feature that allowed
+         * to send some products to different addresses. This is gone now.
+         */
         $package_list = $this->getPackageList($flush);
 
         // Foreach addresses
@@ -2849,7 +2882,10 @@ class CartCore extends ObjectModel
             $best_grade_carriers = [];
             $carriers_instance = [];
 
-            // Get country
+            /*
+             * We initialize address. If no addres was provided ($id_address can be zero),
+             * we will use the default country ID to fetch our shipping prices.
+             */
             if ($id_address) {
                 $address = new Address($id_address);
                 $country = new Country($address->id_country);
@@ -2859,8 +2895,18 @@ class CartCore extends ObjectModel
 
             // Foreach packages, get the carriers with best price, best position and best grade
             foreach ($packages as $id_package => $package) {
-                // No carriers available
-                if (count($packages) == 1 && count($package['carrier_list']) == 1 && current($package['carrier_list']) == 0) {
+                /*
+                 * Usually, there is only one package of products with multiple carriers.
+                 * But, if there is no carrier that sends everything in the cart, the core will
+                 * separate the order into multiple packages. (multishipping)
+                 *
+                 * So, we need to check, if we have AT LEAST ONE carrier for every package.
+                 * If there is one package and it doesn't have any carriers => no delivery options.
+                 * If there are multiple packages and one of them doesn't have any carriers => no delivery options.
+                 *
+                 * We can't just use empty($package['carrier_list']) because it looks like [0 => 0] if there are no carriers.
+                 */
+                if (count($package['carrier_list']) == 1 && current($package['carrier_list']) == 0) {
                     $cache[$this->id] = [];
 
                     return $cache[$this->id];
@@ -4063,6 +4109,8 @@ class CartCore extends ObjectModel
         }
 
         foreach ($this->getProducts() as $product) {
+            // This code is not used, because advanced_stock_management is never enabled
+            // on 1.7 and newer.
             if (
                 !$this->allow_seperated_package
                 && !$product['allow_oosp']
@@ -4080,10 +4128,13 @@ class CartCore extends ObjectModel
                 }
             }
 
+            /*
+             * We have an immediate failure if the product is not active or available for order.
+             * @todo The second condition with quantity is not needed because it's checked properly further down.
+             */
             if (
                 !$product['active'] ||
-                !$product['available_for_order'] ||
-                (!$product['allow_oosp'] && $product['stock_quantity'] < $product['cart_quantity'])
+                !$product['available_for_order']
             ) {
                 return $returnProductOnFailure ? $product : false;
             }
@@ -4094,7 +4145,7 @@ class CartCore extends ObjectModel
                     $product['id_product_attribute'],
                     null,
                     $this,
-                    $product['id_customization']
+                    false
                 );
                 if ($productQuantity < 0) {
                     return $returnProductOnFailure ? $product : false;
@@ -5049,7 +5100,7 @@ class CartCore extends ObjectModel
                 $idProductAttribute,
                 null,
                 $this,
-                $product['id_customization']
+                false
             );
 
             if (!$exclusive

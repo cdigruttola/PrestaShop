@@ -507,7 +507,7 @@ class ProductCore extends ObjectModel
             'on_sale' => ['type' => self::TYPE_BOOL, 'shop' => true, 'validate' => 'isBool'],
             'online_only' => ['type' => self::TYPE_BOOL, 'shop' => true, 'validate' => 'isBool'],
             'ecotax' => ['type' => self::TYPE_FLOAT, 'shop' => true, 'validate' => 'isPrice'],
-            'minimal_quantity' => ['type' => self::TYPE_INT, 'shop' => true, 'validate' => 'isUnsignedInt'],
+            'minimal_quantity' => ['type' => self::TYPE_INT, 'shop' => true, 'validate' => 'isPositiveInt'],
             'low_stock_threshold' => ['type' => self::TYPE_INT, 'shop' => true, 'allow_null' => true, 'validate' => 'isInt'],
             'low_stock_alert' => ['type' => self::TYPE_BOOL, 'shop' => true, 'validate' => 'isBool'],
             'price' => ['type' => self::TYPE_FLOAT, 'shop' => true, 'validate' => 'isPrice', 'required' => true],
@@ -555,8 +555,8 @@ class ProductCore extends ObjectModel
                 ],
             ],
             'name' => ['type' => self::TYPE_STRING, 'lang' => true, 'validate' => 'isCatalogName', 'required' => false, 'size' => ProductSettings::MAX_NAME_LENGTH],
-            'description' => ['type' => self::TYPE_HTML, 'lang' => true, 'validate' => 'isCleanHtml'],
-            'description_short' => ['type' => self::TYPE_HTML, 'lang' => true, 'validate' => 'isCleanHtml'],
+            'description' => ['type' => self::TYPE_HTML, 'lang' => true, 'validate' => 'isCleanHtml', 'size' => 4194303],
+            'description_short' => ['type' => self::TYPE_HTML, 'lang' => true, 'validate' => 'isCleanHtml', 'size' => 4194303],
             'available_now' => ['type' => self::TYPE_STRING, 'lang' => true, 'validate' => 'isGenericName', 'size' => ProductSettings::MAX_AVAILABLE_NOW_LABEL_LENGTH],
             'available_later' => ['type' => self::TYPE_STRING, 'lang' => true, 'validate' => 'IsGenericName', 'size' => ProductSettings::MAX_AVAILABLE_LATER_LABEL_LENGTH],
         ],
@@ -913,7 +913,7 @@ class ProductCore extends ObjectModel
         if ((int) $id_customer > 0) {
             $customer = new Customer((int) $id_customer);
             if (!Validate::isLoadedObject($customer)) {
-                die(Tools::displayError());
+                die(Tools::displayError(sprintf('Customer with ID "%s" could not be loaded.', $id_customer)));
             }
             self::$_taxCalculationMethod = Group::getPriceDisplayMethod((int) $customer->id_default_group);
             $cur_cart = Context::getContext()->cart;
@@ -1645,7 +1645,7 @@ class ProductCore extends ObjectModel
         }
 
         if (!Validate::isOrderBy($order_by) || !Validate::isOrderWay($order_way)) {
-            die(Tools::displayError());
+            die(Tools::displayError('Invalid sorting parameters provided.'));
         }
         if ($order_by == 'id_product' || $order_by == 'price' || $order_by == 'date_add' || $order_by == 'date_upd') {
             $order_by_prefix = 'p';
@@ -3024,7 +3024,7 @@ class ProductCore extends ObjectModel
             $order_by_prefix = 'pl';
         }
         if (!Validate::isOrderBy($order_by) || !Validate::isOrderWay($order_way)) {
-            die(Tools::displayError());
+            die(Tools::displayError('Invalid sorting parameters provided.'));
         }
 
         $sql_groups = '';
@@ -3278,7 +3278,7 @@ class ProductCore extends ObjectModel
         Context $context = null
     ) {
         if (!Validate::isBool($count)) {
-            die(Tools::displayError());
+            die(Tools::displayError('Parameter "count" is invalid.'));
         }
 
         if (!$context) {
@@ -3302,7 +3302,7 @@ class ProductCore extends ObjectModel
             $order_by_prefix = 'pl';
         }
         if (!Validate::isOrderBy($order_by) || !Validate::isOrderWay($order_way)) {
-            die(Tools::displayError());
+            die(Tools::displayError('Invalid sorting parameters provided.'));
         }
         $current_date = date('Y-m-d H:i:00');
         $ids_product = Product::_getProductIdByDate((!$beginning ? $current_date : $beginning), (!$ending ? $current_date : $ending), $context);
@@ -3636,8 +3636,11 @@ class ProductCore extends ObjectModel
             Tools::displayParameterAsDeprecated('divisor');
         }
 
-        if (!Validate::isBool($usetax) || !Validate::isUnsignedId($id_product)) {
-            die(Tools::displayError());
+        if (!Validate::isBool($usetax)) {
+            die(Tools::displayError('Parameter "usetax" is invalid.'));
+        }
+        if (!Validate::isUnsignedId($id_product)) {
+            die(Tools::displayError('Product ID is invalid.'));
         }
 
         // Initializations
@@ -3657,7 +3660,7 @@ class ProductCore extends ObjectModel
             * When called from the back office, cart ID can be inexistant
             */
             if (!$id_cart && !isset($context->employee)) {
-                die(Tools::displayError());
+                die(Tools::displayError('If no employee is assigned in the context, cart ID must be provided to this method.'));
             }
             $cur_cart = new Cart($id_cart);
             // Store cart in context to avoid multiple instantiations in BO
@@ -4309,13 +4312,19 @@ class ProductCore extends ObjectModel
     }
 
     /**
-     * Get available product quantities (this method already have decreased products in cart).
+     * Gets available product quantity.
+     *
+     * Method will automatically determine all special conditions and return correct
+     * quantity for packs, if needed.
+     *
+     * By default, it returns the TRUE quantity in stock. If you want to, you can pass a $cart parameter
+     * and the quantity in stock will be reduced by the quantity there is in the cart.
      *
      * @param int $idProduct Product identifier
      * @param int|null $idProductAttribute Product attribute id (optional)
-     * @param bool|null $cacheIsPack
-     * @param CartCore|null $cart
-     * @param int|null $idCustomization Product customization id (optional)
+     * @param bool|null $cacheIsPack (unused, you can pass null)
+     * @param CartCore|null $cart Pass if you want to reduce the quantity by amount in cart
+     * @param int|bool|null $idCustomization Product customization id (optional)
      *
      * @return int Available quantities
      */
@@ -4326,24 +4335,31 @@ class ProductCore extends ObjectModel
         CartCore $cart = null,
         $idCustomization = null
     ) {
-        // pack usecase: Pack::getQuantity() returns the pack quantity after cart quantities have been removed from stock
+        // If the product is pack, we will handle the logic in another method, because pack stocks can be calculated
+        // in multiple ways, depending on the configuration of the pack.
         if (Pack::isPack((int) $idProduct)) {
             return Pack::getQuantity($idProduct, $idProductAttribute, $cacheIsPack, $cart, $idCustomization);
         }
+
+        // We get the real quantity of the product stock
         $availableQuantity = StockAvailable::getQuantityAvailableByProduct($idProduct, $idProductAttribute);
+
+        // Now, if a $cart was passed, we subtract the quantity in cart from the real quantity.
+        // We don't substract products in cart if the cart is already attached to an order, since stock quantity
+        // has already been updated, this is only useful when the order has not yet been created.
+        // @todo This logic should probably be moved somewhere else, this method should not do anything with orders.
         $nbProductInCart = 0;
-
-        // we don't substract products in cart if the cart is already attached to an order, since stock quantity
-        // has already been updated, this is only useful when the order has not yet been created
         if ($cart && empty(Order::getByCartId($cart->id))) {
+            /*
+             * Now, we get the quantity of the product in cart. This method is clever and in deep_quantity,
+             * it will get us the quantity products in all the packs, if there are some in the cart, not just standard products.
+             */
             $cartProduct = $cart->getProductQuantity($idProduct, $idProductAttribute, $idCustomization);
-
             if (!empty($cartProduct['deep_quantity'])) {
                 $nbProductInCart = $cartProduct['deep_quantity'];
             }
         }
 
-        // @since 1.5.0
         return $availableQuantity - $nbProductInCart;
     }
 
@@ -5639,10 +5655,18 @@ class ProductCore extends ObjectModel
         $row['category_name'] = Db::getInstance()->getValue('SELECT name FROM ' . _DB_PREFIX_ . 'category_lang WHERE id_shop = ' . (int) $context->shop->id . ' AND id_lang = ' . (int) $id_lang . ' AND id_category = ' . (int) $row['id_category_default']);
         $row['link'] = $context->link->getProductLink((int) $row['id_product'], $row['link_rewrite'], $row['category'], $row['ean13']);
 
-        if (empty($row['manufacturer_name']) && (isset($row['id_manufacturer']) && !empty((int) $row['id_manufacturer']))) {
-            $row['manufacturer_name'] = Manufacturer::getNameById((int) $row['id_manufacturer']);
-        } else {
+        // Get manufacturer name if missing
+        if (empty($row['manufacturer_name'])) {
+            // Assign empty value
             $row['manufacturer_name'] = null;
+
+            // If we have manufacturer ID, we wil try to load it's name and assign it
+            if (!empty($row['id_manufacturer'])) {
+                $manufacturerName = Manufacturer::getNameById((int) $row['id_manufacturer']);
+                if (!empty($manufacturerName)) {
+                    $row['manufacturer_name'] = $manufacturerName;
+                }
+            }
         }
 
         $row['attribute_price'] = 0;
@@ -5770,7 +5794,8 @@ class ProductCore extends ObjectModel
             (int) $row['id_product'],
             0,
             isset($row['cache_is_pack']) ? $row['cache_is_pack'] : null,
-            $context->cart
+            $context->cart,
+            false
         );
 
         $row['quantity_all_versions'] = $row['quantity'];
@@ -5781,7 +5806,8 @@ class ProductCore extends ObjectModel
                 (int) $row['id_product'],
                 $id_product_attribute,
                 isset($row['cache_is_pack']) ? $row['cache_is_pack'] : null,
-                $context->cart
+                $context->cart,
+                false
             );
 
             $row['available_date'] = Product::getAvailableDate(
@@ -5880,9 +5906,11 @@ class ProductCore extends ObjectModel
         // Then if combination has an impact we apply it on unit price
         if ($combinationId) {
             $combination = new Combination($combinationId);
-            if (0 != $combination->unit_price_impact && 0 != $baseUnitPrice) {
-                $baseUnitPrice = $baseUnitPrice + $combination->unit_price_impact;
-            }
+            $baseUnitPrice = $baseUnitPrice + $combination->unit_price_impact;
+        }
+
+        if ($baseUnitPrice == 0) {
+            return 0;
         }
 
         // Finally, we apply the currency rate
@@ -5890,10 +5918,6 @@ class ProductCore extends ObjectModel
         $currencyId = Validate::isLoadedObject($context->currency) ? (int) $context->currency->id : $defaultCurrencyId;
         if ($currencyId !== $defaultCurrencyId) {
             $baseUnitPrice = Tools::convertPrice($baseUnitPrice, $currencyId);
-        }
-
-        if ($baseUnitPrice == 0) {
-            return 0;
         }
 
         // Compute price ratio based on initial product price and initial unit price (without taxes, group discount, cart rules)

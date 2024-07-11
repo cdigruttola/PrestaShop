@@ -70,20 +70,20 @@
         <target>Create account</target>
         <note>Line: 53</note>
       </trans-unit>
-    </body>
-  </file>
-  <file original="modules/ps_customersignin/ps_customersignin.tpl" source-language="en-US" target-language="en" datatype="plaintext">
-    <body>
       <trans-unit id="4b877ba8588b19f1b278510bf2b57ebb">
         <source>Log me out</source>
         <target>Log me out</target>
-        <note>Line: 27</note>
+        <note>Line: 49</note>
       </trans-unit>
       <trans-unit id="d4151a9a3959bdd43690735737034f27">
         <source>Log in to your customer account</source>
         <target>Log in to your customer account</target>
-        <note>Line: 30</note>
+        <note>Line: 52</note>
       </trans-unit>
+    </body>
+  </file>
+  <file original="modules/ps_customersignin/ps_customersignin.tpl" source-language="en-US" target-language="en" datatype="plaintext">
+    <body>
       <trans-unit id="2cbfb6731610056e1d0aaacde07096c1">
         <source>View my customer account</source>
         <target>View my customer account</target>
@@ -105,6 +105,15 @@
       </trans-unit>
     </body>
   </file>
+  <file original="themes/classic/templates/checkout/_partials/order-final-summary.tpl" source-language="en-US" target-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="755bb0834a77079fd1330b555b69e6bf">
+        <source>You have given permission to receive your order in recycled packaging.</source>
+        <target>You have given permission to receive your order in recycled packaging.</target>
+        <note>Line: 90</note>
+      </trans-unit>
+    </body>
+  </file>
   <file original="themes/classic/templates/checkout/_partials/steps/personal-information.tpl" source-language="en-US" target-language="en" datatype="plaintext">
     <body>
       <trans-unit id="6280ed214163d6e214763ff970910cdc">
@@ -121,15 +130,6 @@
         <source>Create an account</source>
         <target>Create an account</target>
         <note>Line: 63</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="themes/classic/templates/checkout/order-confirmation.tpl" source-language="en-US" target-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="755bb0834a77079fd1330b555b69e6bf">
-        <source>You have given permission to receive your order in recycled packaging.</source>
-        <target>You have given permission to receive your order in recycled packaging.</target>
-        <note>Line: 70</note>
       </trans-unit>
     </body>
   </file>

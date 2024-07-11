@@ -453,7 +453,7 @@ class AdminCustomerThreadsControllerCore extends AdminController
                     $params = [
                         '{reply}' => Tools::nl2br(Tools::htmlentitiesUTF8(Tools::getValue('reply_message'))),
                         '{link}' => Tools::url(
-                            $this->context->link->getPageLink('contact', true, null, null, false, $ct->id_shop),
+                            $this->context->link->getPageLink('contact', null, null, null, false, $ct->id_shop),
                             'id_customer_thread=' . (int) $ct->id . '&token=' . $ct->token
                         ),
                         '{firstname}' => $customer->firstname,
@@ -549,8 +549,12 @@ class AdminCustomerThreadsControllerCore extends AdminController
             }
         }
 
-        if (!$extension || !Validate::isFileName($filename)) {
-            die(Tools::displayError());
+        if (!$extension) {
+            die(Tools::displayError('Invalid file extension.'));
+        }
+
+        if (!Validate::isFileName($filename)) {
+            die(Tools::displayError('Invalid filename.'));
         }
 
         if (ob_get_level() && ob_get_length() > 0) {

@@ -705,7 +705,7 @@ class DispatcherCore
          *
          * Use getRoutes, addRoute, removeRoute methods for this purpose.
          */
-        Hook::exec('actionAfterLoadRoutes', ['dispatcher' => $this]);
+        Hook::exec('actionAfterLoadRoutes', ['dispatcher' => $this, 'id_shop' => $id_shop]);
     }
 
     /**
@@ -766,6 +766,20 @@ class DispatcherCore
             $keywords = $transform_keywords;
         }
 
+        /*
+         * Now, we will add one optional / to the end of the regexp. This will allow to match
+         * both slashed and non-slashed variant of the URL. The user will be automatically redirected
+         * to the proper canonical variant in the controller, but he won't get a 404.
+         */
+        if (substr($regexp, -1) == '/') {
+            // If the expression ends with a slash, we make it optional.
+            $regexp .= '?';
+        } else {
+            // If not, we add the optional slash.
+            $regexp .= '/?';
+        }
+
+        // Add some static rules to the regexp for all routes
         $regexp = '#^/' . $regexp . '$#u';
 
         return [
@@ -869,6 +883,10 @@ class DispatcherCore
         }
         if (isset(Context::getContext()->shop) && $id_shop === null) {
             $id_shop = (int) Context::getContext()->shop->id;
+        }
+
+        if (!isset($this->routes[$id_shop])) {
+            $this->loadRoutes($id_shop);
         }
 
         return isset($this->routes[$id_shop][$id_lang][$route_id]);

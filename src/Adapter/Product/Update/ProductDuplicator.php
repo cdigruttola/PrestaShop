@@ -266,6 +266,7 @@ class ProductDuplicator extends AbstractMultiShopObjectModelRepository
             // The duplicated product is disabled and not indexed by default
             $shopProduct->indexed = false;
             $shopProduct->active = false;
+            $shopProduct->date_add = date('Y-m-d H:i:s');
             // Force a copy name to tell the two products apart (for each shop since name can be different on each shop)
             $shopProduct->name = $this->getNewProductName($shopProduct->name);
             // Force ID to update the new product
@@ -1023,6 +1024,10 @@ class ProductDuplicator extends AbstractMultiShopObjectModelRepository
                 } elseif (!empty($columnValue) && DateTime::isNull($columnValue)) {
                     // We can't use 0000-00-00 as a value it's not valid in Mysql, so we use null instead
                     return 'null';
+                }
+
+                if (is_string($columnValue)) {
+                    $columnValue = str_replace("'", "''", $columnValue);
                 }
 
                 // We stringify values to avoid SQL syntax error, the float and integers will correctly casted in the DB anyway

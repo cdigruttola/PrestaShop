@@ -87,7 +87,7 @@ class CMSCategoryCore extends ObjectModel
             /* Lang fields */
             'name' => ['type' => self::TYPE_STRING, 'lang' => true, 'validate' => 'isCatalogName', 'required' => true, 'size' => 64],
             'link_rewrite' => ['type' => self::TYPE_STRING, 'lang' => true, 'validate' => 'isLinkRewrite', 'required' => true, 'size' => 64],
-            'description' => ['type' => self::TYPE_STRING, 'lang' => true, 'validate' => 'isCleanHtml'],
+            'description' => ['type' => self::TYPE_STRING, 'lang' => true, 'validate' => 'isCleanHtml', 'size' => 4194303],
             'meta_title' => ['type' => self::TYPE_STRING, 'lang' => true, 'validate' => 'isGenericName', 'size' => 255],
             'meta_description' => ['type' => self::TYPE_STRING, 'lang' => true, 'validate' => 'isGenericName', 'size' => 512],
             'meta_keywords' => ['type' => self::TYPE_STRING, 'lang' => true, 'validate' => 'isGenericName', 'size' => 255],
@@ -241,8 +241,11 @@ class CMSCategoryCore extends ObjectModel
      */
     protected function recursiveDelete(&$to_delete, $id_cms_category)
     {
-        if (!is_array($to_delete) || !$id_cms_category) {
-            die(Tools::displayError());
+        if (!is_array($to_delete)) {
+            die(Tools::displayError('Parameter "to_delete" is invalid.'));
+        }
+        if (!$id_cms_category) {
+            die(Tools::displayError('Parameter "id_cms_category" is invalid.'));
         }
 
         $result = Db::getInstance()->executeS('
@@ -341,7 +344,7 @@ class CMSCategoryCore extends ObjectModel
     public static function getCategories($id_lang, $active = true, $order = true)
     {
         if (!Validate::isBool($active)) {
-            die(Tools::displayError());
+            die(Tools::displayError('Parameter "active" is invalid.'));
         }
 
         $result = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS('
@@ -385,7 +388,7 @@ class CMSCategoryCore extends ObjectModel
     public function getSubCategories($id_lang, $active = true)
     {
         if (!Validate::isBool($active)) {
-            die(Tools::displayError());
+            die(Tools::displayError('Parameter "active" is invalid.'));
         }
 
         $result = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS('
@@ -433,7 +436,7 @@ class CMSCategoryCore extends ObjectModel
     public static function getChildren($id_parent, $id_lang, $active = true)
     {
         if (!Validate::isBool($active)) {
-            die(Tools::displayError());
+            die(Tools::displayError('Parameter "active" is invalid.'));
         }
 
         $result = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS('

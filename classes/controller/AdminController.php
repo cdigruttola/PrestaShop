@@ -984,13 +984,13 @@ class AdminControllerCore extends Controller
                 $action = Tools::getValue('action');
                 // no need to use displayConf() here
                 if (!empty($action) && method_exists($this, 'ajaxProcess' . Tools::toCamelCase($action))) {
-                    Hook::exec('actionAdmin' . ucfirst($this->action) . 'Before', ['controller' => $this]);
-                    Hook::exec('action' . get_class($this) . ucfirst($this->action) . 'Before', ['controller' => $this]);
+                    Hook::exec('actionAdmin' . ucfirst($action) . 'Before', ['controller' => $this]);
+                    Hook::exec('action' . get_class($this) . ucfirst($action) . 'Before', ['controller' => $this]);
 
                     $return = $this->{'ajaxProcess' . Tools::toCamelCase($action)}();
 
-                    Hook::exec('actionAdmin' . ucfirst($this->action) . 'After', ['controller' => $this, 'return' => $return]);
-                    Hook::exec('action' . get_class($this) . ucfirst($this->action) . 'After', ['controller' => $this, 'return' => $return]);
+                    Hook::exec('actionAdmin' . ucfirst($action) . 'After', ['controller' => $this, 'return' => $return]);
+                    Hook::exec('action' . get_class($this) . ucfirst($action) . 'After', ['controller' => $this, 'return' => $return]);
 
                     return $return;
                 } elseif (!empty($action) && $this->controller_name == 'AdminModules' && Tools::getIsset('configure')) {
@@ -1621,7 +1621,7 @@ class AdminControllerCore extends Controller
                     $back = self::$currentIndex . '&token=' . $this->token;
                 }
                 if (!Validate::isCleanHtml($back)) {
-                    die(Tools::displayError());
+                    die(Tools::displayError('Provided "back" parameter is invalid.'));
                 }
                 if (!$this->lite_display) {
                     $this->page_header_toolbar_btn['back'] = [
@@ -1694,7 +1694,7 @@ class AdminControllerCore extends Controller
                     $back = self::$currentIndex . '&token=' . $this->token;
                 }
                 if (!Validate::isCleanHtml($back)) {
-                    die(Tools::displayError());
+                    die(Tools::displayError('Provided "back" parameter is invalid.'));
                 }
                 if (!$this->lite_display) {
                     $this->toolbar_btn['cancel'] = [
@@ -1711,7 +1711,7 @@ class AdminControllerCore extends Controller
                     $back = self::$currentIndex . '&token=' . $this->token;
                 }
                 if (!Validate::isCleanHtml($back)) {
-                    die(Tools::displayError());
+                    die(Tools::displayError('Provided "back" parameter is invalid.'));
                 }
                 if (!$this->lite_display) {
                     $this->toolbar_btn['back'] = [
@@ -2497,7 +2497,7 @@ class AdminControllerCore extends Controller
                 $back = self::$currentIndex . '&token=' . $this->token;
             }
             if (!Validate::isCleanHtml($back)) {
-                die(Tools::displayError());
+                die(Tools::displayError('Provided "back" parameter is invalid.'));
             }
 
             $helper->back_url = $back;

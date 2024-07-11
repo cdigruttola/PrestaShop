@@ -36,6 +36,7 @@ GitHub contributors:
 - Alexander Simonchik
 - Alexandra Even
 - Alexandre Alouit
+- Alexandre Bak
 - Alexandre Bru
 - Alexandre Debusschere
 - Alexandre Hellin
@@ -155,6 +156,7 @@ GitHub contributors:
 - Christophe Rouille
 - Christophe Zarebski
 - ChristopheBoucaut
+- ChronoBrake
 - CINS
 - cippest
 - cirykpopeye
@@ -164,6 +166,7 @@ GitHub contributors:
 - cocoweb
 - Code Utopia
 - Codencode
+- CodeOlympus
 - codvir
 - Comkwatt
 - ComonSoft
@@ -193,12 +196,14 @@ GitHub contributors:
 - Daniel Ziegenberg
 - Daniele Giachino
 - Daniele Rosario
+- Danilo Carta
 - Danoosh
 - Danoosh Mir
 - Dany Maillard
 - daresh
 - Darius Aleksiunas
 - dariusakafest
+- Dariusz Tryba
 - David D.
 - David Diverres
 - David Eschmeyer
@@ -236,7 +241,7 @@ GitHub contributors:
 - doeselschnecke
 - DogSports
 - Dominic Taylor
-- Dominik Ulrich
+- Dominik Shaim Ulrich
 - Dragan Skrbic
 - DRC
 - Dream me up
@@ -246,6 +251,7 @@ GitHub contributors:
 - Dvir Julius
 - Dvir-Julius
 - e-gaulue
+- ecommerce-manager
 - edamart
 - Edouard
 - Edouard Gaulue
@@ -307,6 +313,7 @@ GitHub contributors:
 - Frédéric Benoist
 - Gabriel Arama
 - Gabriel Schwardy
+- Gabriel Tenita
 - Gabriele Manganello
 - Gaelle ITZKOVITZ
 - Gamesh
@@ -354,6 +361,7 @@ GitHub contributors:
 - Henri Davigne
 - Hervé Hennes
 - hhennes
+- Hherreros
 - Hibatallah Aouadni
 - hiousi
 - Hitasukha
@@ -501,6 +509,7 @@ GitHub contributors:
 - Lucas Rolff
 - LucasC
 - Ludovic CHEVRAUX
+- Lunyyx
 - Luis David de la Fuente
 - Lukas Laurinaitis
 - Lyo Nick
@@ -555,6 +564,7 @@ GitHub contributors:
 - Mats Rynge
 - Matteo
 - Matteo Spreafico
+- Matthias Goudjil
 - Matthias Raigne
 - Matthieu Deroubaix
 - Matthieu Mota
@@ -616,6 +626,7 @@ GitHub contributors:
 - mplh
 - mRaigne
 - mrAKAR
+- mrkalchemy
 - mushroot
 - MustangZhong
 - nache
@@ -680,6 +691,7 @@ GitHub contributors:
 - Petrov Sergey
 - Petyuska
 - Philip Iezzi
+- Philipp Vujic
 - PhpMadman
 - PICHAT Morgan
 - Pierre
@@ -775,6 +787,7 @@ GitHub contributors:
 - Roman Ondráček
 - Rúben Martins
 - Rudra Sarkar
+- Rudolf Kastl
 - runningz
 - s-duval
 - Sacha
@@ -867,6 +880,7 @@ GitHub contributors:
 - Teemu Mäntynen
 - The Gitter Badger
 - themella
+- theoalloin
 - theodiablo
 - therampagerado
 - Thibaud Chauviere
@@ -877,6 +891,7 @@ GitHub contributors:
 - Thomas
 - Thomas Baccelli
 - Thomas Blanc
+- Thomas Delaporte
 - Thomas Ferney
 - Thomas L'huillier
 - Thomas Leguillant

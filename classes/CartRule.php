@@ -117,7 +117,7 @@ class CartRuleCore extends ObjectModel
             'id_customer' => ['type' => self::TYPE_INT, 'validate' => 'isUnsignedId'],
             'date_from' => ['type' => self::TYPE_DATE, 'validate' => 'isDate', 'required' => true],
             'date_to' => ['type' => self::TYPE_DATE, 'validate' => 'isDate', 'required' => true],
-            'description' => ['type' => self::TYPE_STRING, 'validate' => 'isCleanHtml', 'size' => 65534],
+            'description' => ['type' => self::TYPE_STRING, 'validate' => 'isCleanHtml', 'size' => 4194303],
             'quantity' => ['type' => self::TYPE_INT, 'validate' => 'isUnsignedInt'],
             'quantity_per_user' => ['type' => self::TYPE_INT, 'validate' => 'isUnsignedInt'],
             'priority' => ['type' => self::TYPE_INT, 'validate' => 'isUnsignedInt'],
@@ -366,8 +366,8 @@ class CartRuleCore extends ObjectModel
      * @param int $id_lang Language ID
      * @param int $id_customer Customer ID
      * @param bool $active Active vouchers only
-     * @param bool $includeGeneric Include generic AND highlighted vouchers, regardless of highlight_only setting
-     * @param bool $inStock Vouchers in stock only
+     * @param bool $includeGeneric Include generic vouchers that don't have specific customer
+     * @param bool $inStock Vouchers that have "total quantity" remaining
      * @param CartCore|null $cart Cart
      * @param bool $free_shipping_only Free shipping only
      * @param bool $highlight_only Highlighted vouchers only
@@ -390,30 +390,35 @@ class CartRuleCore extends ObjectModel
             return [];
         }
 
-        $sql_part1 = '* FROM `' . _DB_PREFIX_ . 'cart_rule` cr
-            LEFT JOIN `' . _DB_PREFIX_ . 'cart_rule_lang` crl ON (cr.`id_cart_rule` = crl.`id_cart_rule` AND crl.`id_lang` = ' . (int) $id_lang . ')';
+        // Basic part of the query, we are selecting all cart rules
+        $sql = '
+            SELECT SQL_NO_CACHE * FROM `' . _DB_PREFIX_ . 'cart_rule` cr
+            LEFT JOIN `' . _DB_PREFIX_ . 'cart_rule_lang` crl 
+            ON (cr.`id_cart_rule` = crl.`id_cart_rule` AND crl.`id_lang` = ' . (int) $id_lang . ')';
 
-        $sql_where = ' WHERE ((cr.`id_customer` = ' . (int) $id_customer . ' OR (cr.`id_customer` = 0 AND (cr.`highlight` = 1 OR cr.`code` = "")))';
+        // We will definitely include vouchers for this specific customer
+        $sql .= ' WHERE (cr.`id_customer` = ' . (int) $id_customer;
 
+        // And if required, all the generic ones, that don't have any specific customer set
         if ($includeGeneric && (int) $id_customer !== 0) {
-            $sql_where .= ' OR cr.`id_customer` = 0)';
-        } else {
-            $sql_where .= ')';
+            $sql .= ' OR cr.`id_customer` = 0';
         }
+        $sql .= ')';
 
-        $sql_part2 = ' AND NOW() BETWEEN cr.date_from AND cr.date_to
+        // Then, conditions for date, voucher active property and total amount of vouchers in stock
+        $sql .= ' AND NOW() BETWEEN cr.date_from AND cr.date_to
             ' . ($active ? 'AND cr.`active` = 1' : '') . '
             ' . ($inStock ? 'AND cr.`quantity` > 0' : '');
 
+        // If we want to select only vouchers that have free shipping as the action
         if ($free_shipping_only) {
-            $sql_part2 .= ' AND free_shipping = 1 AND carrier_restriction = 1';
+            $sql .= ' AND free_shipping = 1 AND carrier_restriction = 1';
         }
 
+        // If we want to select only vouchers with "Highlight" option activated
         if ($highlight_only) {
-            $sql_part2 .= ' AND highlight = 1 AND code NOT LIKE "' . pSQL(CartRule::BO_ORDER_CODE_PREFIX) . '%"';
+            $sql .= ' AND highlight = 1 AND code NOT LIKE "' . pSQL(CartRule::BO_ORDER_CODE_PREFIX) . '%"';
         }
-
-        $sql = 'SELECT SQL_NO_CACHE ' . $sql_part1 . $sql_where . $sql_part2;
 
         $result = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($sql, true, false);
 
@@ -421,7 +426,11 @@ class CartRuleCore extends ObjectModel
             return [];
         }
 
-        // Remove cart rule that does not match the customer groups
+        /*
+         * Remove cart rule that does not match the customer groups.
+         * Even if empty $id_customer was provided, we will still get
+         * a visitor group.
+         */
         $customerGroups = Customer::getGroupsStatic($id_customer);
 
         foreach ($result as $key => $cart_rule) {
@@ -473,41 +482,46 @@ class CartRuleCore extends ObjectModel
                 }
             }
         }
-        $result_bak = $result;
-        $result = [];
-        $country_restriction = false;
-        foreach ($result_bak as $key => $cart_rule) {
+
+        /*
+         * Now, we check the country restrictions on this cart rule.
+         * The rule is will be displayed, if the customer has at least one
+         * address with country in the allowed list.
+         *
+         * If the customer has no addresses, we won't display anything.
+         */
+        foreach ($result as $key => $cart_rule) {
             if ($cart_rule['country_restriction']) {
-                $country_restriction = true;
-                $countries = Db::getInstance()->executeS(
-                    '
-                    SELECT `id_country`
-                    FROM `' . _DB_PREFIX_ . 'address`
-                    WHERE `id_customer` = ' . (int) $id_customer . '
-                    AND `deleted` = 0'
+                /*
+                 * If the rule has country restriction and there is no customer ID
+                 * provided, it doesn't make sense to check anything else.
+                 *
+                 * This customer can't have any addresses, thus no cart rule will be valid.
+                 */
+                if (empty($id_customer)) {
+                    unset($result[$key]);
+                    continue;
+                }
+
+                /*
+                 * Now, when we are sure that we have some sensible customer ID to validate upon,
+                 * we can check if he has any valid addresses that intersect with the allowed countries
+                 * in the cart rule. So he will be able to use it.
+                 */
+                $validAddressExists = Db::getInstance()->getValue('
+                    SELECT crc.id_cart_rule 
+                    FROM ' . _DB_PREFIX_ . 'cart_rule_country crc 
+                    INNER JOIN ' . _DB_PREFIX_ . 'address a
+                    ON a.id_customer = ' . (int) $id_customer . ' AND
+                    a.deleted = 0 AND
+                    a.id_country = crc.id_country
+                    WHERE crc.id_cart_rule = ' . (int) $cart_rule['id_cart_rule']
                 );
 
-                if (is_array($countries) && count($countries)) {
-                    foreach ($countries as $country) {
-                        $id_cart_rule = (bool) Db::getInstance()->getValue('
-                            SELECT crc.id_cart_rule
-                            FROM ' . _DB_PREFIX_ . 'cart_rule_country crc
-                            WHERE crc.id_cart_rule = ' . (int) $cart_rule['id_cart_rule'] . '
-                            AND crc.id_country = ' . (int) $country['id_country']);
-                        if ($id_cart_rule) {
-                            $result[] = $result_bak[$key];
-
-                            break;
-                        }
-                    }
+                if (empty($validAddressExists)) {
+                    unset($result[$key]);
                 }
-            } else {
-                $result[] = $result_bak[$key];
             }
-        }
-
-        if (!$country_restriction) {
-            $result = $result_bak;
         }
 
         return $result;
@@ -526,7 +540,7 @@ class CartRuleCore extends ObjectModel
         $query = new DbQuery();
         $query->select('cr.*, crl.name');
         $query->from('cart_rule', 'cr');
-        $query->where('cr.id_customer = ' . $customerId . ' OR (cr.`id_customer` = 0 AND (cr.`highlight` = 1 OR cr.`code` = ""))');
+        $query->where('cr.id_customer = ' . $customerId);
         $query->leftJoin('cart_rule_lang', 'crl', 'cr.id_cart_rule = crl.id_cart_rule AND crl.id_lang = ' . (int) Configuration::get('PS_LANG_DEFAULT'));
         $query->orderBy('cr.active DESC, cr.id_customer DESC');
 
@@ -960,25 +974,41 @@ class CartRuleCore extends ObjectModel
      */
     public function checkProductRestrictionsFromCart(CartCore $cart, $returnProducts = false, $displayError = true, $alreadyInCart = false)
     {
+        // Prepare a list of products to return, if the caller wishes so and provided returnProducts = true
         $selected_products = [];
 
-        // Check if the products chosen by the customer are usable with the cart rule
+        // Do all of this only if the cart rule actually has some restrictions
         if ($this->product_restriction) {
+            // Load products in cart and return if it's empty, there is no point in checking anything else
+            $products = $cart->getProducts();
+            if (empty($products)) {
+                return (!$displayError) ? false : $this->trans('You cannot use this voucher in an empty cart', [], 'Shop.Notifications.Error');
+            }
+
+            // Now we load all RULE GROUP.
             $product_rule_groups = $this->getProductRuleGroups();
             foreach ($product_rule_groups as $id_product_rule_group => $product_rule_group) {
+                /*
+                 * Rule group is a set of rules that the cart must meet for this cart rule to be applied.
+                 * These groups have an AND relationship. If you create two groups for given cart rule,
+                 * the cart must meet the conditions of both of them to be applied.
+                 *
+                 * Also, at least $product_rule_group['quantity'] must meet these rules.
+                 */
                 $eligible_products_list = [];
-                if (is_array($products = $cart->getProducts())) {
-                    foreach ($products as $product) {
-                        $eligible_products_list[] = (int) $product['id_product'] . '-' . (int) $product['id_product_attribute'];
-                    }
+                foreach ($products as $product) {
+                    $eligible_products_list[] = (int) $product['id_product'] . '-' . (int) $product['id_product_attribute'];
                 }
-                if (!count($eligible_products_list)) {
-                    return (!$displayError) ? false : $this->trans('You cannot use this voucher in an empty cart', [], 'Shop.Notifications.Error');
-                }
+
+                // Now, we load the RULES inside the RULE GROUP
                 $product_rules = $this->getProductRules($id_product_rule_group);
                 $countRulesProduct = count($product_rules);
                 $condition = 0;
                 foreach ($product_rules as $product_rule) {
+                    /*
+                     * For the cart RULE GROUP to be validated, at least on of the RULES inside the RULE GROUP
+                     * must meet the conditions.
+                     */
                     switch ($product_rule['type']) {
                         case 'attributes':
                             $cart_attributes = Db::getInstance()->executeS('
@@ -1312,6 +1342,9 @@ class CartRuleCore extends ObjectModel
             // Discount (%) on the selection of products
             if ((float) $this->reduction_percent && $this->reduction_product == -2) {
                 $selected_products_reduction = 0;
+
+                // Let's get products this cart rule applies to. We should get an array, but we can also
+                // get a false in some cases. It doesn't matter much though, as long as we check what we got.
                 $selected_products = $this->checkProductRestrictionsFromCart($context->cart, true);
                 if (is_array($selected_products)) {
                     foreach ($package_products as $product) {
