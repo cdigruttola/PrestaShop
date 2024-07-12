@@ -70,3 +70,6 @@
 [submodule "modules/eicaptcha"]
 	path = modules/eicaptcha
 	url = https://github.com/nenes25/eicaptcha.git
+[submodule "variableshipping"]
+	path = variableshipping
+	url = https://github.com/cdigruttola/prestashop-variable-shipping.git
