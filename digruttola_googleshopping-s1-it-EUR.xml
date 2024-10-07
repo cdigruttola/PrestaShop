@@ -1,0 +1,1784 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+
+<channel>
+<title><![CDATA[Di Gruttola Angelo & C. Srl]]></title>
+<description><![CDATA[Gusti autentici dell'Irpinia nel nostro panificio e pastificio artigianale. Pane, taralli, pizza e pasta fresca, con ingredienti di alta qualità. Ordina online e assapora l'Irpinia ovunque tu sia. Scopri la tradizione del panificio e pastificio avellino]]></description>
+<link href="http://localhost:8888/prestashop/" rel="alternate" type="text/html"/>
+<image>
+<url>http://localhost:8888/prestashop/img/logo-1655729154.jpg</url>
+<link>http://localhost:8888/prestashop/</link>
+</image>
+<modified>2023-12-03 T01:01:01Z</modified>
+<author>
+<name>Panificio &amp; Pastificio Di Gruttola</name>
+</author>
+
+<item>
+<g:id>57</g:id>
+<g:title><![CDATA[prova pack]]></g:title>
+<g:description><![CDATA[prova pack]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/catalogo/57-prova-pack-prova-pack]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/180-large_default/prova-pack-prova-pack.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[]]></g:product_type>
+<g:google_product_category><![CDATA[Google Category Example > Google Sub-Category Example]]></g:google_product_category>
+<g:quantity>100</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>0 EUR</g:price>
+<g:gtin>8054247050276</g:gtin>
+<g:identifier_exists>FALSE</g:identifier_exists>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>11</g:id>
+<g:title><![CDATA[Focaccia]]></g:title>
+<g:description><![CDATA[La Focaccia è sana, leggera e soffice. Cotta a legna per un gusto genuino e digeribile. Perfetta da farcire e gustare in ogni occasione. Ordina subito la focaccia artigianale migliore!]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/pane/11-focaccia-pfafo]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/131-large_default/focaccia.jpg]]></g:image_link>
+<g:additional_image_link><![CDATA[http://localhost:8888/prestashop/132-large_default/focaccia.jpg]]></g:additional_image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Pane]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Pane e focacce]]></g:google_product_category>
+<g:quantity>197</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>2.59 EUR</g:price>
+<g:gtin>8054247050498</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFAFO]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>1.00 kg</g:shipping_weight>
+<g:shipping_length>0.30 cm</g:shipping_length>
+<g:shipping_width>0.30 cm</g:shipping_width>
+<g:shipping_height>0.10 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>16</g:id>
+<g:title><![CDATA[Pane cotto a legna]]></g:title>
+<g:description><![CDATA[Uno degli aspetti più apprezzati del pane casereccio cotto a legna è la conservabilità, o ltre al suo sapore unico e antico . Il sapore del pane di una volta. Lavorazione artigianale solo con lievito madre ad alta digeribilità.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/pane/16-pane-cotto-a-legna-pal01]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/151-large_default/pane-cotto-a-legna.jpg]]></g:image_link>
+<g:additional_image_link><![CDATA[http://localhost:8888/prestashop/150-large_default/pane-cotto-a-legna.jpg]]></g:additional_image_link>
+<g:additional_image_link><![CDATA[http://localhost:8888/prestashop/152-large_default/pane-cotto-a-legna.jpg]]></g:additional_image_link>
+<g:additional_image_link><![CDATA[http://localhost:8888/prestashop/149-large_default/pane-cotto-a-legna.jpg]]></g:additional_image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Pane]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Pane e focacce]]></g:google_product_category>
+<g:quantity>190</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>2.59 EUR</g:price>
+<g:gtin>8054247050221</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PAL01]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>1.00 kg</g:shipping_weight>
+<g:shipping_length>0.30 cm</g:shipping_length>
+<g:shipping_width>0.30 cm</g:shipping_width>
+<g:shipping_height>0.10 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>17</g:id>
+<g:title><![CDATA[Pane di Semola di Grano Duro]]></g:title>
+<g:description><![CDATA[Il Pane di Semola di Grano Duro è un pane di struttura semplice ma con una fragranza che ti riporta a "casa".]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/pane/17-pane-di-semola-di-grano-duro-pad01]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/155-large_default/pane-di-semola-di-grano-duro.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Pane]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Pane e focacce]]></g:google_product_category>
+<g:quantity>194</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>2.99 EUR</g:price>
+<g:gtin>8054247050283</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PAD01]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>1.00 kg</g:shipping_weight>
+<g:shipping_length>0.30 cm</g:shipping_length>
+<g:shipping_width>0.30 cm</g:shipping_width>
+<g:shipping_height>0.10 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>18</g:id>
+<g:title><![CDATA[Pane di Grano Tenero]]></g:title>
+<g:description><![CDATA[Il nostro Pane di Grano Tenero è prodotto artigianalmente, con un gusto casereccio e fragrante. Realizzato con grano di alta qualità, è perfetto per ogni occasione.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/pane/18-pane-di-grano-tenero-pat01]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/154-large_default/pane-di-grano-tenero.jpg]]></g:image_link>
+<g:additional_image_link><![CDATA[http://localhost:8888/prestashop/153-large_default/pane-di-grano-tenero.jpg]]></g:additional_image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Pane]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Pane e focacce]]></g:google_product_category>
+<g:quantity>200</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>2.29 EUR</g:price>
+<g:gtin>8054247050276</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PAT01]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>1.00 kg</g:shipping_weight>
+<g:shipping_length>0.30 cm</g:shipping_length>
+<g:shipping_width>0.30 cm</g:shipping_width>
+<g:shipping_height>0.10 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>8</g:id>
+<g:title><![CDATA[Cavatelli Lisci]]></g:title>
+<g:description><![CDATA[Pasta corta e liscia, hanno una forma allungata con delle caratteristiche incavature al loro interno, è piuttosto piccola e sottile.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/pasta-fresca-artigianale/8-cavatelli-lisci-psdcl]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/124-large_default/cavatelli-lisci.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Pasta Fresca Artigianale]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Pasta e tagliatelle]]></g:google_product_category>
+<g:quantity>200</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050115</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PSDCL]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.50 kg</g:shipping_weight>
+<g:shipping_length>0.20 cm</g:shipping_length>
+<g:shipping_width>0.20 cm</g:shipping_width>
+<g:shipping_height>0.03 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>9</g:id>
+<g:title><![CDATA[Cavatelli Rigati]]></g:title>
+<g:description><![CDATA[I nostri Cavatelli rigati o Gnocchetti Sardi sono un omaggio alla cucina tradizionale regionale Sarda, dove vengono chiamati anche malloreddus, ovvero piccoli gnocchi.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/pasta-fresca-artigianale/9-cavatelli-rigati-psdcr]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/125-large_default/cavatelli-rigati.jpg]]></g:image_link>
+<g:additional_image_link><![CDATA[http://localhost:8888/prestashop/126-large_default/cavatelli-rigati.jpg]]></g:additional_image_link>
+<g:additional_image_link><![CDATA[http://localhost:8888/prestashop/127-large_default/cavatelli-rigati.jpg]]></g:additional_image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Pasta Fresca Artigianale]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Pasta e tagliatelle]]></g:google_product_category>
+<g:quantity>200</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050047</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PSDCR]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.50 kg</g:shipping_weight>
+<g:shipping_length>0.20 cm</g:shipping_length>
+<g:shipping_width>0.20 cm</g:shipping_width>
+<g:shipping_height>0.03 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>10</g:id>
+<g:title><![CDATA[Cicatielli]]></g:title>
+<g:description><![CDATA[Il cicatiello ha origine lontane, emblema della cucina contadina. La sua forma si deve a uno sfogo di una donna tradita dal marito e poi tramandata di generazione in generazione.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/pasta-fresca-artigianale/10-cicatielli-psdci]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/128-large_default/cicatielli.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Pasta Fresca Artigianale]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Pasta e tagliatelle]]></g:google_product_category>
+<g:quantity>192</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050030</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PSDCI]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.50 kg</g:shipping_weight>
+<g:shipping_length>0.20 cm</g:shipping_length>
+<g:shipping_width>0.20 cm</g:shipping_width>
+<g:shipping_height>0.03 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>12</g:id>
+<g:title><![CDATA[Fusilli Avellinesi]]></g:title>
+<g:description><![CDATA[Il Fusillo Avellinese è un formato tipico della tradizione gastronomica irpina prodotto rigorosamente con trafilata al bronzo per trattenere ancor di più il sapore e il condimento.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/pasta-fresca-artigianale/12-fusilli-avellinesi-psdfu]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/136-large_default/fusilli-avellinesi.jpg]]></g:image_link>
+<g:additional_image_link><![CDATA[http://localhost:8888/prestashop/135-large_default/fusilli-avellinesi.jpg]]></g:additional_image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Pasta Fresca Artigianale]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Pasta e tagliatelle]]></g:google_product_category>
+<g:quantity>190</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050023</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PSDFU]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.50 kg</g:shipping_weight>
+<g:shipping_length>0.20 cm</g:shipping_length>
+<g:shipping_width>0.20 cm</g:shipping_width>
+<g:shipping_height>0.03 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>14</g:id>
+<g:title><![CDATA[Orecchiette]]></g:title>
+<g:description><![CDATA[Le Orecchiette artigianali sono un grande classico della cucina pugliese che a tavola sta bene con tutto, dal classico condimento con le cime di rapa a un sugo leggero di pomodoro fresco e basilico.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/pasta-fresca-artigianale/14-orecchiette-psdor]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/145-large_default/orecchiette.jpg]]></g:image_link>
+<g:additional_image_link><![CDATA[http://localhost:8888/prestashop/144-large_default/orecchiette.jpg]]></g:additional_image_link>
+<g:additional_image_link><![CDATA[http://localhost:8888/prestashop/143-large_default/orecchiette.jpg]]></g:additional_image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Pasta Fresca Artigianale]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Pasta e tagliatelle]]></g:google_product_category>
+<g:quantity>200</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050061</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PSDOR]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.50 kg</g:shipping_weight>
+<g:shipping_length>0.20 cm</g:shipping_length>
+<g:shipping_width>0.20 cm</g:shipping_width>
+<g:shipping_height>0.03 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>15</g:id>
+<g:title><![CDATA[Paccheri]]></g:title>
+<g:description><![CDATA[Il sapore inconfondibile stordisce il palato, l’incontro con il pomodoro è storicamente “amore a prima vista”.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/pasta-fresca-artigianale/15-paccheri-psdpa]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/146-large_default/paccheri.jpg]]></g:image_link>
+<g:additional_image_link><![CDATA[http://localhost:8888/prestashop/148-large_default/paccheri.jpg]]></g:additional_image_link>
+<g:additional_image_link><![CDATA[http://localhost:8888/prestashop/147-large_default/paccheri.jpg]]></g:additional_image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Pasta Fresca Artigianale]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Pasta e tagliatelle]]></g:google_product_category>
+<g:quantity>200</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050108</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PSDPA]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.50 kg</g:shipping_weight>
+<g:shipping_length>0.20 cm</g:shipping_length>
+<g:shipping_width>0.20 cm</g:shipping_width>
+<g:shipping_height>0.03 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>24</g:id>
+<g:title><![CDATA[Scialatielli]]></g:title>
+<g:description><![CDATA[Originari della Costiera Amalfitana, gli Scialatielli sono deliziosi in molte ricette, soprattutto con sughi di pesce e frutti di mare.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/pasta-fresca-artigianale/24-scialatielli-psdsc]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/165-large_default/scialatielli.jpg]]></g:image_link>
+<g:additional_image_link><![CDATA[http://localhost:8888/prestashop/166-large_default/scialatielli.jpg]]></g:additional_image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Pasta Fresca Artigianale]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Pasta e tagliatelle]]></g:google_product_category>
+<g:quantity>200</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050078</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PSDSC]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.50 kg</g:shipping_weight>
+<g:shipping_length>0.20 cm</g:shipping_length>
+<g:shipping_width>0.20 cm</g:shipping_width>
+<g:shipping_height>0.03 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>26</g:id>
+<g:title><![CDATA[Strozzapreti]]></g:title>
+<g:description><![CDATA[Una pasta semplice ma capace di dare vita a dei piatti incredibili! Gli strozzapreti, grazie alla loro forma particolare, risultano perfetti per accompagnare qualsiasi sugo. Provali con il ragù di carne, con un raffinato sugo allo scoglio, con porcini e tartufo o semplicemente con panna e prosciutto o panna e speck.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/pasta-fresca-artigianale/26-strozzapreti-psdst]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/172-large_default/strozzapreti.jpg]]></g:image_link>
+<g:additional_image_link><![CDATA[http://localhost:8888/prestashop/173-large_default/strozzapreti.jpg]]></g:additional_image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Pasta Fresca Artigianale]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Pasta e tagliatelle]]></g:google_product_category>
+<g:quantity>200</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050016</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PSDST]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.50 kg</g:shipping_weight>
+<g:shipping_length>0.20 cm</g:shipping_length>
+<g:shipping_width>0.20 cm</g:shipping_width>
+<g:shipping_height>0.03 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>27</g:id>
+<g:title><![CDATA[Tagliatelle]]></g:title>
+<g:description><![CDATA[Le Tagliatelle, perfette con un ragù di carne, sono trafilate al bronzo ed essiccate lentamente a basse temperature, per un risultato che stupisce per ruvidezza, profumi e gusto.  L'assenza dell'uovo permette a questa tagliatella di essere leggera e adatta a tutti i palati.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/pasta-fresca-artigianale/27-tagliatelle-psdta]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/170-large_default/tagliatelle.jpg]]></g:image_link>
+<g:additional_image_link><![CDATA[http://localhost:8888/prestashop/171-large_default/tagliatelle.jpg]]></g:additional_image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Pasta Fresca Artigianale]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Pasta e tagliatelle]]></g:google_product_category>
+<g:quantity>200</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050085</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PSDTA]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.50 kg</g:shipping_weight>
+<g:shipping_length>0.20 cm</g:shipping_length>
+<g:shipping_width>0.20 cm</g:shipping_width>
+<g:shipping_height>0.03 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>28</g:id>
+<g:title><![CDATA[Trofie]]></g:title>
+<g:description><![CDATA[Pasta artigianale tipica della cucina ligure con il caratteristico attorcigliamento che la rende unica nel suo genere.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/pasta-fresca-artigianale/28-trofie-psdtr]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/159-large_default/trofie.jpg]]></g:image_link>
+<g:additional_image_link><![CDATA[http://localhost:8888/prestashop/158-large_default/trofie.jpg]]></g:additional_image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Pasta Fresca Artigianale]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Pasta e tagliatelle]]></g:google_product_category>
+<g:quantity>200</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050054</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PSDTR]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.50 kg</g:shipping_weight>
+<g:shipping_length>0.20 cm</g:shipping_length>
+<g:shipping_width>0.20 cm</g:shipping_width>
+<g:shipping_height>0.03 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>36</g:id>
+<g:title><![CDATA[Calamarata]]></g:title>
+<g:description><![CDATA[Il nome "calamarata" deriva dalla somiglianza di questa pasta con i calamari tagliati, ideale per primi piatti a base di pesce.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/pasta-fresca-artigianale/36-calamarata-psdca]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/122-large_default/calamarata.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Pasta Fresca Artigianale]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Pasta e tagliatelle]]></g:google_product_category>
+<g:quantity>200</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050092</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PSDCA]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.50 kg</g:shipping_weight>
+<g:shipping_length>0.20 cm</g:shipping_length>
+<g:shipping_width>0.20 cm</g:shipping_width>
+<g:shipping_height>0.03 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>41</g:id>
+<g:title><![CDATA[Penne rigate]]></g:title>
+<g:description><![CDATA[Le penne rigate sono uno dei formati di pasta più diffusi e amati. Si tratta infatti di un formato molto versatile, che esalta ogni tipo di condimento, da quelli più tradizionali a quelli più originali.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/pasta-fresca-artigianale/41-penne-rigate-psdpr]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/156-large_default/penne-rigate.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Pasta Fresca Artigianale]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Pasta e tagliatelle]]></g:google_product_category>
+<g:quantity>200</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050450</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PSDPR]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.50 kg</g:shipping_weight>
+<g:shipping_length>0.20 cm</g:shipping_length>
+<g:shipping_width>0.20 cm</g:shipping_width>
+<g:shipping_height>0.03 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>1</g:id>
+<g:title><![CDATA[Biscotteria Desiderio]]></g:title>
+<g:description><![CDATA[Semplici leggeri, ricchi e golosi, con mandorle, arachidi e cioccolato. Ottimi per la colazione o per un goloso spuntino durante la giornata.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/1-biscotteria-desiderio-pfbde]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/117-large_default/biscotteria-desiderio.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>200</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>2.99 EUR</g:price>
+<g:gtin>8054247050269</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFBDE]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.18 kg</g:shipping_weight>
+<g:shipping_length>0.20 cm</g:shipping_length>
+<g:shipping_width>0.20 cm</g:shipping_width>
+<g:shipping_height>0.03 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>2</g:id>
+<g:title><![CDATA[Biscotti]]></g:title>
+<g:description><![CDATA[Il Biscotto classico per eccellenza ottimo in qualsiasi situazione, dalla colazione al dessert.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/2-biscotti-pfbbi]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/99-large_default/biscotti.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>181</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050139</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFBBI]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.18 kg</g:shipping_weight>
+<g:shipping_length>0.20 cm</g:shipping_length>
+<g:shipping_width>0.20 cm</g:shipping_width>
+<g:shipping_height>0.03 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>3</g:id>
+<g:title><![CDATA[Biscotti al Cacao]]></g:title>
+<g:description><![CDATA[I Biscotti al cacao sono biscotti artigianali ideali per la vostra colazione con zuppa di latte o per essere gustati da soli, col caffè, tè o tisane, in compagnia dei vostri amici.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/3-biscotti-al-cacao-pfbca]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/119-large_default/biscotti-al-cacao.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>190</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050207</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFBCA]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.18 kg</g:shipping_weight>
+<g:shipping_length>0.20 cm</g:shipping_length>
+<g:shipping_width>0.20 cm</g:shipping_width>
+<g:shipping_height>0.03 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>4</g:id>
+<g:title><![CDATA[Biscotti Crema Gianduia]]></g:title>
+<g:description><![CDATA[Beneficia di una dolce delizia con i Biscotti alla Crema Gianduia! Questa ricetta è stata prodotta con ingredienti accuratamente selezionati e mescolata meticolosamente per fornire un gusto incomparabile, arricchito dal sapore della crema gianduia.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/4-biscotti-crema-gianduia-pfbgi]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/121-large_default/biscotti-crema-gianduia.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>200</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050153</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFBGI]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.18 kg</g:shipping_weight>
+<g:shipping_length>0.20 cm</g:shipping_length>
+<g:shipping_width>0.20 cm</g:shipping_width>
+<g:shipping_height>0.03 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>5</g:id>
+<g:title><![CDATA[Cantucci]]></g:title>
+<g:description><![CDATA[I Cantucci o cantuccini alle mandorle fanno parte della tradizione dolciaria toscana che li vede come perfetto fine pasto in abbinamento con il Vin Santo.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/5-cantucci-pfbmd]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/123-large_default/cantucci.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>200</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>2.99 EUR</g:price>
+<g:gtin>8054247050160</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFBMD]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.18 kg</g:shipping_weight>
+<g:shipping_length>0.20 cm</g:shipping_length>
+<g:shipping_width>0.20 cm</g:shipping_width>
+<g:shipping_height>0.03 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>6</g:id>
+<g:title><![CDATA[Biscotti con Marmellata]]></g:title>
+<g:description><![CDATA[I Biscotti con Marmellata rappresentano un'eccezionale scelta di gusto per l'esperienza culinaria! Realizzati con una lenta cottura in forno che ne esalta la fragranza, sono preparati utilizzando soltanto ingredienti naturali e genuini.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/6-biscotti-con-marmellata-pfbmr]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/120-large_default/biscotti-con-marmellata.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>200</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050146</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFBMR]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.18 kg</g:shipping_weight>
+<g:shipping_length>0.20 cm</g:shipping_length>
+<g:shipping_width>0.20 cm</g:shipping_width>
+<g:shipping_height>0.03 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>7</g:id>
+<g:title><![CDATA[Friselle]]></g:title>
+<g:description><![CDATA[Tipologia di pane biscottato dalle antiche origini, le freselle campane sono ciambelle di grano duro cotte al forno, tagliate a metà in senso orizzontale e poi nuovamente infornate per farle biscottare.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/7-friselle-pfabr]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/133-large_default/friselle.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>197</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>2.49 EUR</g:price>
+<g:gtin>8054247050337</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFABR]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.40 kg</g:shipping_weight>
+<g:shipping_length>0.20 cm</g:shipping_length>
+<g:shipping_width>0.20 cm</g:shipping_width>
+<g:shipping_height>0.03 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>13</g:id>
+<g:title><![CDATA[Grissini]]></g:title>
+<g:description><![CDATA[Grissini Classici all'Olio d'Oliva, sinceri compagni su qualsiasi tavola, mai invadenti e fedeli compagni di qualsiasi degustazione, leggeri e croccanti dal gusto delicato.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/13-grissini-pftgr]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/137-large_default/grissini.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>200</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050344</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFTGR]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.30 kg</g:shipping_weight>
+<g:shipping_length>0.30 cm</g:shipping_length>
+<g:shipping_width>0.30 cm</g:shipping_width>
+<g:shipping_height>0.10 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>23</g:id>
+<g:title><![CDATA[Savoiardi]]></g:title>
+<g:description><![CDATA[I Savoiardi sono biscotti leggerissimi, friabili e spumosi a base di uova da allevamento a terra, zucchero e farina, vengono preparati a mano e colati con la sac a poche... uno ad uno.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/23-savoiardi-pfbsa]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/164-large_default/savoiardi.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>200</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050191</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFBSA]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.18 kg</g:shipping_weight>
+<g:shipping_length>0.30 cm</g:shipping_length>
+<g:shipping_width>0.30 cm</g:shipping_width>
+<g:shipping_height>0.10 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>29</g:id>
+<g:title><![CDATA[Taralli Classici Arianesi all'Olio di Oliva]]></g:title>
+<g:description><![CDATA[I nostri Taralli Classici Arianesi all'Olio di Oliva sono la scelta perfetta per chi cerca una pausa leggera e gustosa. La loro consistenza fragrante sorprende il palato, mentre le note di olio di oliva extra vergine regalano un sapore intenso e autentico. Prodotto tipico dell'irpinia, ogni morso attinge ai sapori genuini della tradizione.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/29-taralli-classici-arianesi-all-olio-di-oliva-pftols]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/163-large_default/taralli-classici-arianesi-all-olio-di-oliva.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>185</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050177</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFTOLS]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.33 kg</g:shipping_weight>
+<g:shipping_length>0.30 cm</g:shipping_length>
+<g:shipping_width>0.30 cm</g:shipping_width>
+<g:shipping_height>0.10 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>30</g:id>
+<g:title><![CDATA[Taralli all'olio non lessati]]></g:title>
+<g:description><![CDATA[Sorprendono per la consistenza fragrante e il profumo dell'olio. Ottimi in tutti i momenti della giornata.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/30-taralli-all-olio-non-lessati-pftoln]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/169-large_default/taralli-all-olio-non-lessati.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>197</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050252</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFTOLN]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.33 kg</g:shipping_weight>
+<g:shipping_length>0.30 cm</g:shipping_length>
+<g:shipping_width>0.30 cm</g:shipping_width>
+<g:shipping_height>0.10 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>31</g:id>
+<g:title><![CDATA[Taralli Classici Arianesi]]></g:title>
+<g:description><![CDATA[I Taralli Arianesi Classici sono preparati secondo la tradizione, con le migliori farine di grano tenero, acqua, sale e semi di finocchietto. Grazie alla loro ricetta autentica, sono altamente digeribili e aromatizzati. Perfetti come sostituto del pane o come spuntino gustoso, i Taralli Arianesi Classici sono un'esperienza genuina e autentica. Ordina subito e scopri il vero sapore della tradizione irpina!]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/31-taralli-classici-arianesi-pftac]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/167-large_default/taralli-classici-arianesi.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>194</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050184</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFTAC]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.33 kg</g:shipping_weight>
+<g:shipping_length>0.30 cm</g:shipping_length>
+<g:shipping_width>0.30 cm</g:shipping_width>
+<g:shipping_height>0.10 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>32</g:id>
+<g:title><![CDATA[Taralli all'uovo]]></g:title>
+<g:description><![CDATA[Leggeri e fragranti, portano con sé gli antichi sapori. Presenti da decenni sulle nostre tavole, con un'antica tradizione storica, i taralli all’uovo sono lo snack d’accompagnamento più stuzzicante che ci sia.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/32-taralli-all-uovo-pftuo]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/168-large_default/taralli-all-uovo.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>186</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>3.69 EUR</g:price>
+<g:gtin>8054247050290</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFTUO]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.28 kg</g:shipping_weight>
+<g:shipping_length>0.30 cm</g:shipping_length>
+<g:shipping_width>0.30 cm</g:shipping_width>
+<g:shipping_height>0.10 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>33</g:id>
+<g:title><![CDATA[Taralli Integrali]]></g:title>
+<g:description><![CDATA[Per chi non vuole rinunciare al sapore del tarallo, ma più leggero e ricco di fibre, ottimi in ogni momento della giornata.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/33-taralli-integrali-pftig]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/162-large_default/taralli-integrali.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>200</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050238</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFTIG]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.33 kg</g:shipping_weight>
+<g:shipping_length>0.30 cm</g:shipping_length>
+<g:shipping_width>0.30 cm</g:shipping_width>
+<g:shipping_height>0.10 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>34</g:id>
+<g:title><![CDATA[Taralli intrecciati]]></g:title>
+<g:description><![CDATA[Sfiziosi e croccanti i taralli intrecciati ai semi di finocchio sono perfetti sia per accompagnare aperitivi sia come spuntino durante la giornata.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/34-taralli-intrecciati-pftir]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/50-large_default/taralli-intrecciati.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>200</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050245</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFTIR]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.33 kg</g:shipping_weight>
+<g:shipping_length>0.30 cm</g:shipping_length>
+<g:shipping_width>0.30 cm</g:shipping_width>
+<g:shipping_height>0.10 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>35</g:id>
+<g:title><![CDATA[Taralli saporiti]]></g:title>
+<g:description><![CDATA[I taralli al vino bianco sorprendono con un gusto equilibrato in cui spicca la nota vivace del vino bianco.  ]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/35-taralli-saporiti-pftvi]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/161-large_default/taralli-saporiti.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>200</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>2.29 EUR</g:price>
+<g:gtin>8054247050214</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFTVI]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.33 kg</g:shipping_weight>
+<g:shipping_length>0.30 cm</g:shipping_length>
+<g:shipping_width>0.30 cm</g:shipping_width>
+<g:shipping_height>0.10 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>37</g:id>
+<g:title><![CDATA[Morselletti al Miele]]></g:title>
+<g:description><![CDATA[Ottimi per la colazione o spuntini al volo, un biscotto veramente per tutti!]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/37-morselletti-al-miele-pfbmm]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/140-large_default/morselletti-al-miele.jpg]]></g:image_link>
+<g:additional_image_link><![CDATA[http://localhost:8888/prestashop/141-large_default/morselletti-al-miele.jpg]]></g:additional_image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>194</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.99 EUR</g:price>
+<g:gtin>8054247050375</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFBMM]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.18 kg</g:shipping_weight>
+<g:shipping_length>0.30 cm</g:shipping_length>
+<g:shipping_width>0.30 cm</g:shipping_width>
+<g:shipping_height>0.10 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>38</g:id>
+<g:title><![CDATA[Colomba Artigianale Classica]]></g:title>
+<g:description><![CDATA[La Colomba Artigianale Classica a lievitazione naturale è la regina della Pasqua della tradizione Italiana.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/38-colomba-artigianale-classica-pflco]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/54-large_default/colomba-artigianale-classica.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:availability>in stock</g:availability>
+<g:price>25.99 EUR</g:price>
+<g:gtin>8054247050436</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFLCO]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.75 kg</g:shipping_weight>
+<g:shipping_length>0.30 cm</g:shipping_length>
+<g:shipping_width>0.30 cm</g:shipping_width>
+<g:shipping_height>0.10 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>39</g:id>
+<g:title><![CDATA[Colomba Artigianale al Cioccolato]]></g:title>
+<g:description><![CDATA[La Colomba Artigianale al Cioccolato è un prelibato dolce artigianale dal gusto intenso e morbidezza unica, perfetto per ogni occasione. Realizzato con ingredienti selezionati e una lavorazione attenta, il suo aroma e la consistenza morbida e decisa del cioccolato sapranno conquistare i palati più esigenti.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/39-colomba-artigianale-al-cioccolato-pflcc]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/55-large_default/colomba-artigianale-al-cioccolato.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:availability>in stock</g:availability>
+<g:price>25.99 EUR</g:price>
+<g:gtin>8054247050443</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFLCC]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.75 kg</g:shipping_weight>
+<g:shipping_length>0.30 cm</g:shipping_length>
+<g:shipping_width>0.30 cm</g:shipping_width>
+<g:shipping_height>0.10 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>40</g:id>
+<g:title><![CDATA[Lingue di Gatto]]></g:title>
+<g:description><![CDATA[Solo 4 ingredienti per un biscotto sottile e fragrante dalla forma stretta e lunga che ricorda la lingua di un gatto; da qui il loro originale nome.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/40-lingue-di-gatto-pfblg]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/138-large_default/lingue-di-gatto.jpg]]></g:image_link>
+<g:additional_image_link><![CDATA[http://localhost:8888/prestashop/139-large_default/lingue-di-gatto.jpg]]></g:additional_image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:availability>in stock</g:availability>
+<g:price>3.49 EUR</g:price>
+<g:gtin>8054247050481</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFBLG]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.18 kg</g:shipping_weight>
+<g:shipping_length>0.30 cm</g:shipping_length>
+<g:shipping_width>0.30 cm</g:shipping_width>
+<g:shipping_height>0.10 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>44</g:id>
+<g:title><![CDATA[Taralli sfiziosi]]></g:title>
+<g:description><![CDATA[I nostri Taralli Sfiziosi sono una perfezione del fine pasto! Leggeri e croccanti si sposano con qualsiasi portata, donando un gusto esclusivo e ricercato ad ogni occasione.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/44-taralli-sfiziosi-pftsf]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/160-large_default/taralli-sfiziosi.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>194</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>2.79 EUR</g:price>
+<g:gtin>8054247050504</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFTSF]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.28 kg</g:shipping_weight>
+<g:shipping_length>0.30 cm</g:shipping_length>
+<g:shipping_width>0.30 cm</g:shipping_width>
+<g:shipping_height>0.10 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>45</g:id>
+<g:title><![CDATA[Friselle integrali]]></g:title>
+<g:description><![CDATA[Leggere, fragranti e nutrienti, ideali per uno spuntino, per un aperitivo o per le cene d'estate. Quando aprirete la confezione non potrete non essere rapiti dal profumo di grano integrale che sprigionano queste freselle.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/45-friselle-integrali-pfafi]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/134-large_default/friselle-integrali.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>200</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>1.49 EUR</g:price>
+<g:gtin>8054247050528</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFAFI]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.23 kg</g:shipping_weight>
+<g:shipping_length>0.20 cm</g:shipping_length>
+<g:shipping_width>0.20 cm</g:shipping_width>
+<g:shipping_height>0.03 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>47</g:id>
+<g:title><![CDATA[Colomba Artigianale al Pistacchio]]></g:title>
+<g:description><![CDATA[La Colomba Artigianale al Pistacchio è una prelibatezza artigianale dal gusto intenso e morbidezza unica, perfetta per ogni momento della giornata. L'ingrediente principale, il pistacchio, la rende delicata e inconfondibile.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/47-colomba-artigianale-al-pistacchio-pflpi]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/63-large_default/colomba-artigianale-al-pistacchio.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:availability>in stock</g:availability>
+<g:price>27.99 EUR</g:price>
+<g:gtin>8054247050511</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFLPI]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.75 kg</g:shipping_weight>
+<g:shipping_length>0.30 cm</g:shipping_length>
+<g:shipping_width>0.30 cm</g:shipping_width>
+<g:shipping_height>0.10 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>48</g:id>
+<g:title><![CDATA[Mostaccioli]]></g:title>
+<g:description><![CDATA[I  Mostaccioli Napoletani sono i classici dolci tipici Natalizi; caratterizzati dalla loro forma romboidale, essi sono ricoperti da una fine ma gustosa glassa al cioccolato che accompagna l’interno, il cui sapore ricorda quello del miele e della frutta candita.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/48-mostaccioli-pfnmo]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/142-large_default/mostaccioli.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>18</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>4.19 EUR</g:price>
+<g:gtin>8054247050559</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFNMO]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.29 kg</g:shipping_weight>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>49</g:id>
+<g:title><![CDATA[Roccocò]]></g:title>
+<g:description><![CDATA[Il  Roccocò è il classico dolce napoletano di natale, immancabile sulla tavola di ogni napoletano. Esso chiude il pranzo natalizio e accompagna tutte le feste di natale, insieme ad altri dolci tipici della tradizione natalizia partenopea.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/49-roccoco-pfnro]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/157-large_default/roccoco.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>18</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>4.19 EUR</g:price>
+<g:gtin>8054247050566</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFNRO]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.29 kg</g:shipping_weight>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>50</g:id>
+<g:title><![CDATA[Panettone Artigianale Classico]]></g:title>
+<g:description><![CDATA[Il Panettone Artigianale Classico è un dolce natalizio che possiede un sapore unico e inconfondibile. Il nostro panettone viene prodotto utilizzando ingredienti di prima qualità, selezionati ad arte per garantire la massima qualità e la migliore esperienza gustativa.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/50-panettone-artigianale-classico-pfnpa]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/176-large_default/panettone-artigianale-classico.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>19</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>23.99 EUR</g:price>
+<g:gtin>8054247050405</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFNPA]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.75 kg</g:shipping_weight>
+<g:shipping_length>0.30 cm</g:shipping_length>
+<g:shipping_width>0.30 cm</g:shipping_width>
+<g:shipping_height>0.10 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>51</g:id>
+<g:title><![CDATA[Panettone Artigianale al Cioccolato]]></g:title>
+<g:description><![CDATA[Il panettone artigianale al cioccolato è la gioia di Natale che piace a tutti. La sua tradizione prende vita nella ricchezza degli ingredienti naturali accuratamente selezionati con cura dai nostri maestri pasticceri artigianali, le cui sapienti mani creano un prodotto di qualità eccellente con un gusto sublime perfetto per tutte le età.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/51-panettone-artigianale-al-cioccolato-pfnpc]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/174-large_default/panettone-artigianale-al-cioccolato.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>20</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>24.99 EUR</g:price>
+<g:gtin>8054247050412</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFNPC]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.75 kg</g:shipping_weight>
+<g:shipping_length>0.30 cm</g:shipping_length>
+<g:shipping_width>0.30 cm</g:shipping_width>
+<g:shipping_height>0.10 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>52</g:id>
+<g:title><![CDATA[Panettone Artigianale al Pistacchio]]></g:title>
+<g:description><![CDATA[Il Panettone Artigianale Pistacchio è la scelta giusta per voi che cercate qualcosa di unico e reso speciale dalla mano dell'artigiano, che aggiunge un ottimo sapore a ogni ricetta.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/prodotti-da-forno/52-panettone-artigianale-al-pistacchio-pfnpp]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/175-large_default/panettone-artigianale-al-pistacchio.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Prodotti da Forno]]></g:product_type>
+<g:google_product_category><![CDATA[Cibo, bevande e tabacco > Alimenti > Prodotti da forno > Prodotti da forno assortiti]]></g:google_product_category>
+<g:quantity>20</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>25.99 EUR</g:price>
+<g:gtin>8054247050535</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PFNPP]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>0.75 kg</g:shipping_weight>
+<g:shipping_length>0.30 cm</g:shipping_length>
+<g:shipping_width>0.30 cm</g:shipping_width>
+<g:shipping_height>0.10 cm</g:shipping_height>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>53</g:id>
+<g:title><![CDATA[Pacchetto Degustazione Pasta]]></g:title>
+<g:description><![CDATA[Il Pacchetto Degustazione Pasta è l'ideale per gli amanti della cucina italiana e per coloro che desiderano esplorare gusti e consistenze diverse. Questo pacchetto racchiude otto tipi unici di pasta fresca, selezionati con cura per offrire un'esperienza culinaria straordinaria. Ogni tipo di pasta è realizzato con ingredienti di alta qualità e seguendo metodi artigianali per garantire un gusto autentico e una consistenza perfetta.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/cesti-regalo-e-degustazione/53-pacchetto-degustazione-pasta-pspde]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/177-large_default/pacchetto-degustazione-pasta.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Cesti regalo e degustazione]]></g:product_type>
+<g:google_product_category><![CDATA[Google Category Example > Google Sub-Category Example]]></g:google_product_category>
+<g:quantity>100</g:quantity>
+<g:availability>in stock</g:availability>
+<g:price>15.92 EUR</g:price>
+<g:gtin>8054247050603</g:gtin>
+<g:brand><![CDATA[Di Gruttola]]></g:brand>
+<g:mpn><![CDATA[PSPDE]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>8.14 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>8.14 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>4.00 kg</g:shipping_weight>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>54</g:id>
+<g:title><![CDATA[Pacchetto Degustazione Taralli]]></g:title>
+<g:description><![CDATA[Il Pacchetto Degustazione Taralli è un prodotto unico che ti offre la possibilità di assaggiare una varietà di taralli artigianali selezionati con cura. Questo pacchetto comprende otto diversi tipi di taralli, ciascuno con il suo carattere e sapore distintivo. Ogni tarallo è realizzato con ingredienti di alta qualità e seguendo metodi tradizionali, garantendo un'esperienza gustativa autentica. Il Pacchetto Degustazione Taralli è perfetto per coloro che amano i sapori tradizionali e desiderano esplorare le diverse varietà di questo delizioso snack italiano.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/cesti-regalo-e-degustazione/54-pacchetto-degustazione-taralli-pftde]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/178-large_default/pacchetto-degustazione-taralli.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Cesti regalo e degustazione]]></g:product_type>
+<g:google_product_category><![CDATA[Google Category Example > Google Sub-Category Example]]></g:google_product_category>
+<g:availability>in stock</g:availability>
+<g:price>18.72 EUR</g:price>
+<g:gtin>8054247050610</g:gtin>
+<g:mpn><![CDATA[PFTDE]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>8.14 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>8.14 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>2.51 kg</g:shipping_weight>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+<item>
+<g:id>55</g:id>
+<g:title><![CDATA[Pacchetto Degustazione Biscotti]]></g:title>
+<g:description><![CDATA[Il Pacchetto Degustazione Biscotti è un'irresistibile offerta che ti permette di immergerti in un mondo di delizie artigianali. Questo pacchetto contiene sette diverse varietà di biscotti, ognuna caratterizzata da un gusto unico e una consistenza perfetta. Realizzati con ingredienti selezionati e preparati secondo metodi tradizionali, questi biscotti artigianali sono l'ideale per i momenti di dolcezza e per accompagnare una tazza di caffè o tè. Con il Pacchetto Degustazione Biscotti, potrai esplorare una selezione di sapori, scoprire nuovi preferiti e rendere ogni pausa una vera e propria esperienza indulgente.]]></g:description>
+<g:link><![CDATA[http://localhost:8888/prestashop/it/cesti-regalo-e-degustazione/55-pacchetto-degustazione-biscotti-pfbde]]></g:link>
+<g:image_link><![CDATA[http://localhost:8888/prestashop/179-large_default/pacchetto-degustazione-biscotti.jpg]]></g:image_link>
+<g:condition><![CDATA[new]]></g:condition>
+<g:product_type><![CDATA[Cesti regalo e degustazione]]></g:product_type>
+<g:google_product_category><![CDATA[Google Category Example > Google Sub-Category Example]]></g:google_product_category>
+<g:availability>in stock</g:availability>
+<g:price>15.94 EUR</g:price>
+<g:gtin>8054247050627</g:gtin>
+<g:mpn><![CDATA[PFBDE]]></g:mpn>
+<g:shipping>
+	<g:country>DE</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>IT</g:country>
+	<g:service>2-4 giorni</g:service>
+	<g:price>7.16 EUR</g:price>
+</g:shipping>
+<g:shipping>
+	<g:country>GB</g:country>
+	<g:service></g:service>
+	<g:price>0 EUR</g:price>
+</g:shipping>
+<g:shipping_weight>1.23 kg</g:shipping_weight>
+<g:unit_pricing_measure>1 ct</g:unit_pricing_measure>
+</item>
+
+</channel>
+</rss>

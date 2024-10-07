@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+
+<channel>
+<title><![CDATA[Di Gruttola Angelo & C. Srl]]></title>
+<description><![CDATA[Gusti autentici dell'Irpinia nel nostro panificio e pastificio artigianale. Pane, taralli, pizza e pasta fresca, con ingredienti di alta qualità. Ordina online e assapora l'Irpinia ovunque tu sia. Scopri la tradizione del panificio e pastificio avellino]]></description>
+<link href="http://localhost:8888/prestashop/" rel="alternate" type="text/html"/>
+<image>
+<url>http://localhost:8888/prestashop/img/logo-1655729154.jpg</url>
+<link>http://localhost:8888/prestashop/</link>
+</image>
+<modified>2023-12-03 T01:01:01Z</modified>
+<author>
+<name>Panificio &amp; Pastificio Di Gruttola</name>
+</author>
+
+</channel>
+</rss>
