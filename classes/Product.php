@@ -6221,9 +6221,9 @@ class ProductCore extends ObjectModel
 
                 if ($customization_quantity) {
                     $product_update['total_wt'] = $price_wt * ($product_quantity - $customization_quantity);
-                    $product_update['total_customization_wt'] = $price_wt * $customization_quantity;
+                    $product_update['total_customization_wt'] = $product_update['unit_price_tax_incl'] * $customization_quantity;
                     $product_update['total'] = $price * ($product_quantity - $customization_quantity);
-                    $product_update['total_customization'] = $price * $customization_quantity;
+                    $product_update['total_customization'] = $product_update['unit_price_tax_excl'] * $customization_quantity;
                 }
             }
         }
@@ -7267,11 +7267,12 @@ class ProductCore extends ObjectModel
             return false;
         }
 
-        // result is indexed by recordset order and not position. positions start at index 1 so we need an empty element
-        array_unshift($result, null);
+        // result is indexed by recordset order and not position.
         foreach ($result as &$value) {
             $value = $value['id_product'];
         }
+        // positions start at index 1 so we need an empty element
+        array_unshift($result, null);
 
         $current_position = $this->getWsPositionInCategory();
 
